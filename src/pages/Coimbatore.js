@@ -13,6 +13,7 @@ import pride from"../images/images-1/gsquare-pride.jpg";
 import ghats from"../images/images-1/gsquare-western-ghats.jpg"
 import kosmos from"../images/images-1/kosmo.jpg"
 
+import Cta from '../sections/Cta';
 
 function Coimbatore(){
     return(
@@ -530,6 +531,9 @@ function Coimbatore(){
             </div>
         </div>
         </section>
+
+
+        <Cta/>
         
         </>
     );

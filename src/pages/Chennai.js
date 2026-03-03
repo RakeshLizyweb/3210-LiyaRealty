@@ -10,6 +10,9 @@ import gayatri from"../images/images-1/gayatri.jpg"
 import shakti from"../images/images-1/shakti.jpg"
 
 
+import Cta from '../sections/Cta';
+
+
 function Chennai(){
     return(
         <>
@@ -359,7 +362,8 @@ function Chennai(){
             </div>
             </section>
         
-        
+             
+             <Cta/>
         </>
     );
 }

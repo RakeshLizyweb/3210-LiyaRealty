@@ -257,7 +257,7 @@
   display: flex;
   align-items: stretch;
   gap: 60px;
-  max-width: 1200px;
+  max-width: 100%;
   margin: auto;
   position: relative;
   z-index: 2;
@@ -289,7 +289,7 @@
   position: absolute;
   top: 20px;
   left: 20px;
-  background: linear-gradient(45deg, #5286fb, #2b59ff);
+  background: linear-gradient(45deg, var(--sub), var(--sub));
   color: #fff;
   padding: 8px 18px;
   border-radius: 50px;
@@ -303,7 +303,7 @@
   flex: 1;
   background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(15px);
-  padding: 40px;
+  padding: 20px;
   border-radius: 25px;
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
   transition: 0.4s ease;
@@ -320,7 +320,7 @@
 .villa-content .location {
   font-size: 15px;
   letter-spacing: 1px;
-  color: #5286fb;
+  color: var(--sub);
   margin-bottom: 20px;
   font-weight: 600;
 }
@@ -329,7 +329,7 @@
 .contact-btn {
   display: inline-block;
   padding: 10px 25px;
-  background: linear-gradient(45deg, #5286fb, #2b59ff);
+  background: linear-gradient(45deg, var(--sub), var(--sub));
   color: white;
   border-radius: 30px;
   font-weight: 600;
@@ -340,7 +340,8 @@
 
 .contact-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 25px rgba(82, 134, 251, 0.4);
+  color: white;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.11);
 }
 
 /* ===== DETAILS GRID ===== */
@@ -494,6 +495,7 @@
 }
 /* ===== COMMON SECTION TITLE ===== */
 .section-title {
+  padding-top: 30px;
   font-size: 32px;
   font-weight: 800;
   margin-bottom: 12px;
@@ -501,6 +503,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
+  text-align: center;
 }
 
 /* Optional underline accent */
@@ -509,8 +512,9 @@
   display: block;
   width: 70px;
   height: 3px;
-  margin-top: 8px;
   border-radius: 4px;
+  margin: auto;
+  margin-top: 8px;
   background: linear-gradient(90deg, var(--sub), var(--sub));
 }
 
@@ -520,4 +524,5 @@
   color: #555;
   line-height: 1.7;
   margin-bottom: 25px;
+  text-align: center;
 }
