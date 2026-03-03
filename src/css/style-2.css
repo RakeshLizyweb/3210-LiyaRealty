@@ -500,8 +500,6 @@
   font-weight: 800;
   margin-bottom: 12px;
   background: linear-gradient(45deg, var(--sub), var(--sub));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   position: relative;
   text-align: center;
 }
