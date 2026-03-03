@@ -8,9 +8,6 @@ import {Link} from 'react-router-dom';
 
 function Header(){
     
-
-
-
     return(
             <>
             {/* Topbar Start */}
@@ -20,11 +17,15 @@ function Header(){
                         <div className="col-lg-6 text-center text-lg-start mb-2 mb-lg-0">
                         <div className="topbar-left">
                             <small className='top-contact-info'>
-                            <i className="fa fa-phone-alt me-2"></i>+91 12345 67891
+                            <a className='Header-contact-link' href='tel:+91 94443 86103 '><i className="fa fa-phone-alt me-2"></i>+91 94443 86103 </a>
                             </small>
                             <span className="divider">|</span>
                             <small className='top-contact-info'>
-                            <i className="fa fa-envelope me-2"></i>info@example.com
+                            <a className='Header-contact-link' href='tel:+91 94443 64504'><i className="fa fa-phone-alt me-2"></i>+91 94443 64504</a>
+                            </small>
+                            <span className="divider">|</span>
+                            <small className='top-contact-info'>
+                            <a  className='Header-contact-link' href='mailto:info@example.com'><i className="fa fa-envelope me-2"></i>info@example.com</a>
                             </small>
                         </div>
                         </div>
@@ -97,7 +98,7 @@ function Header(){
                         <Link to="/Contact" className="nav-link">Contact</Link>
                         </div>
 
-                        <a href="tel:+91 58764 78566" className="btn join-btn">Join Us</a>
+                        <a href="tel:+91 94443 86103" className="btn join-btn">Join Us</a>
                     </div>
                     </div>
                 </nav>

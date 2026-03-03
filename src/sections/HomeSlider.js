@@ -7,6 +7,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import {Link} from 'react-router-dom';
 
 import SlideImage1 from '../images/h-slide-1.jpg'
 import SlideImage2 from '../images/h-slide-2.jpg'
@@ -39,9 +40,9 @@ function HomeSlider(){
                             Discover premium properties in prime locations designed for
                             comfort, elegance, and long-term value.
                             </p>
-                            <button className="premiumHeroBtn">
+                            <Link to="/Properties/Chennai"  className="premiumHeroBtn">
                             Explore Properties
-                            </button>
+                            </Link>
                         </div>
                         </div>
                     </div>
@@ -63,9 +64,9 @@ function HomeSlider(){
                             Beautifully crafted homes with modern architecture and
                             world-class amenities for a refined lifestyle.
                             </p>
-                            <button className="premiumHeroBtn">
+                            <Link to="About" className="premiumHeroBtn">
                             About Us
-                            </button>
+                            </Link>
                         </div>
                         </div>
                     </div>
@@ -87,9 +88,9 @@ function HomeSlider(){
                             Invest in properties with high appreciation value and build
                             wealth through smart real estate decisions.
                             </p>
-                            <button className="premiumHeroBtn">
+                            <Link to="/Contact" className="premiumHeroBtn">
                             Contact Us
-                            </button>
+                            </Link>
                         </div>
                         </div>
                     </div>
