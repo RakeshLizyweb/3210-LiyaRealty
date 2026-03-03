@@ -501,7 +501,7 @@
   font-size: 32px;
   font-weight: 800;
   margin-bottom: 12px;
-  background: linear-gradient(45deg, #5286fb, #2b59ff);
+  background: linear-gradient(45deg, var(--sub), var(--sub));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
@@ -515,7 +515,7 @@
   height: 3px;
   margin-top: 8px;
   border-radius: 4px;
-  background: linear-gradient(90deg, #5286fb, #2b59ff);
+  background: linear-gradient(90deg, var(--sub), var(--sub));
 }
 
 /* ===== COMMON SUBTITLE ===== */

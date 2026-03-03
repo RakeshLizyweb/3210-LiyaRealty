@@ -45,8 +45,8 @@ function HomeTestimonial(){
         <>
         <section className="testimonials-section py-5">
             <div className="container text-center">
-                <h2 className="section-title mb-3">What Our Clients Say</h2>
-                <p className="section-subtitle mb-5">
+                <h2 className="test-section-title mb-3">What Our Clients Say</h2>
+                <p className="test-section-subtitle mb-5">
                 Trusted by hundreds of happy homeowners and investors.
                 </p>
 
