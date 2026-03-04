@@ -93,7 +93,7 @@ function Footer(){
                     <h4 className="fa fa-map-marker-alt foot-git-icon"></h4>
                     <div className="pl-3">
                     <h5 className="text-black">Address</h5>
-                    <p>123 Street, New York, USA</p>
+                    <p>Coimbatore</p>
                     </div>
                 </div>
 
@@ -101,15 +101,23 @@ function Footer(){
                     <h4 className="fa fa-envelope foot-git-icon"></h4>
                     <div className="pl-3">
                     <h5 className="text-black">Email</h5>
-                    <p>info@example.com</p>
+                    <a href='mailto:sales@liyarealty.com'>sales@liyarealty.com</a>
                     </div>
                 </div>
 
-                <div className="d-flex">
+                <div className="d-flex pt-2">
                     <h4 className=" fa fa-phone-alt foot-git-icon"></h4>
                     <div className="pl-3">
                     <h5 className="text-black">Phone</h5>
-                    <p>+012 345 67890</p>
+                    <a href='tel:+919444386103 '>+91 94443 86103</a>
+                    </div>
+                </div>
+
+                <div className="d-flex pt-2">
+                    <h4 className=" fa fa-phone-alt foot-git-icon"></h4>
+                    <div className="pl-3">
+                    <h5 className="text-black">Phone</h5>
+                    <a href='tel:+919444364504 '>+91 94443 64504</a>
                     </div>
                 </div>
                 </div>

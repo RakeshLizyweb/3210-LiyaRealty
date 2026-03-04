@@ -43,8 +43,8 @@ function Contact(){
                         <i className="fa-solid fa-phone"></i>
                         </div>
                         <h3>Phone Number</h3><br/>
-                        <a href='tel:+919150414988'>+91 91504 14988</a><br/>
-                        <a href='tel:+919080051621'>+91 90800 51621</a>
+                        <a href='tel:+919444386103 '>+91 94443 86103</a><br/>
+                        <a href='tel:+919444364504'>+91 94443 64504</a>
                         
                     </div>
 
@@ -53,7 +53,7 @@ function Contact(){
                         <i className="fa-solid fa-envelope"></i>
                         </div>
                         <h3 className='pb-3'>Email</h3>
-                        <a href='mailto:info@gmail.com'   >info@gmail.com</a>
+                        <a href='mailto:sales@liyarealty.com'>sales@liyarealty.com</a>
                     </div>
 
                     <div className="col-12 col-lg-3 contact-page-card">
@@ -62,8 +62,7 @@ function Contact(){
                         </div>
                         <h3>Address</h3>
                         <p className='pt-3'>
-                        183, 184 Subramaniam Road <br />
-                        RS Puram, Coimbatore 641002
+                        Coimbatore
                         </p>
                     </div>
 

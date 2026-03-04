@@ -85,7 +85,7 @@ function Chennai(){
 
                 <h2>Casagrand Utopia – 2 & 3 BHK Premium Apartments</h2>
                 <h4 className="location">MANAPAKKAM, CHENNAI</h4>
-                <a href="#contact" className="contact-btn">Contact Now</a>
+                <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
 
             <div className="villa-details">
 
@@ -144,7 +144,7 @@ function Chennai(){
 
                 <h2>Radiance Suprema – 2, 3 & 4 BHK Luxury Apartments</h2>
                 <h4 className="location">MADHAVARAM, CHENNAI</h4>
-                <a href="#contact" className="contact-btn">Contact Now</a>
+                <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
 
                 <div className="villa-details">
 
@@ -205,7 +205,7 @@ function Chennai(){
 
                 <h2>Gayatri Adithya – 3 BHK Apartment</h2>
                 <h4 className="location">BESANT NAGAR, CHENNAI</h4>
-                <a href="#contact" className="contact-btn">Contact Now</a>
+                <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
 
                 <div className="villa-details">
 
@@ -259,7 +259,7 @@ function Chennai(){
 
                 <h2>Sakthi Enclave – 2 & 3 BHK Apartments</h2>
                 <h4 className="location">ALWARPET, CHENNAI</h4>
-                <a href="#contact" className="contact-btn">Contact Now</a>
+                <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
 
                 <div className="villa-details">
 
@@ -317,7 +317,7 @@ function Chennai(){
 
                 <h2>Blue Wall Lahari – 3 BHK Apartment</h2>
                 <h4 className="location">NUNGAMBAKKAM, CHENNAI</h4>
-                <a href="#contact" className="contact-btn">Contact Now</a>
+                <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
                                             
                 <div className="villa-details">
 

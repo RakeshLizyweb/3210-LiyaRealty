@@ -2,6 +2,7 @@ import '../css/style-1.css';
 import '../css/style-2.css';
 import '../css/style.css';
 
+import {Link} from 'react-router-dom'
 
 function Cta(){
     return(
@@ -19,13 +20,13 @@ function Cta(){
                 </p>
 
                 <div className="d-flex justify-content-center gap-4 flex-wrap">
-                <button className="btn btn-cta-primary">
+                <Link to="/Properties/Chennai" className="btn btn-cta-primary">
                     Explore Projects
-                </button>
+                </Link>
 
-                <button className="btn btn-cta-outline">
+                <a href="tel:+919444386103" className="btn btn-cta-outline">
                     Get Free Consultation
-                </button>
+                </a>
                 </div>
             </div>
             </section>

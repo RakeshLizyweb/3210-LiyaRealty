@@ -91,7 +91,7 @@ function Coimbatore(){
 
       <h2>G Square Western Ghats – Premium Residential Plots</h2>
       <h4 className="location">PALANTHURAI ROAD, COIMBATORE</h4>
-      <a href="#contact" className="contact-btn">Contact Now</a>
+      <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
 
       <div className="villa-details">
 
@@ -151,7 +151,7 @@ function Coimbatore(){
 
       <h2>G Square Blossom – Premium Residential Plots</h2>
       <h4 className="location">AVINASHI, COIMBATORE</h4>
-      <a href="#contact" className="contact-btn">Contact Now</a>
+      <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
 
       <div className="villa-details">
 
@@ -210,7 +210,7 @@ function Coimbatore(){
 
             <h2>G Square Pride TVS Nagar – Premium Residential Plots</h2>
             <h4 className="location">EDAYARPALAYAM, COIMBATORE</h4>
-            <a href="#contact" className="contact-btn">Contact Now</a>
+            <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
 
             <div className="villa-details">
 
@@ -273,7 +273,7 @@ function Coimbatore(){
 
             <h2>G Square City – Premium Residential Plots</h2>
             <h4 className="location">L&T BYPASS, COIMBATORE</h4>
-            <a href="#contact" className="contact-btn">Contact Now</a>
+            <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
 
             <div className="villa-details">
 
@@ -334,7 +334,7 @@ function Coimbatore(){
 
             <h2>Radiance Splendour – 3 & 4 BHK Luxury Villas</h2>
             <h4 className="location">VEDAPATTI, COIMBATORE</h4>
-            <a href="#contact" className="contact-btn">Contact Now</a>
+            <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
 
             <div className="villa-details">
 
@@ -392,7 +392,7 @@ function Coimbatore(){
 
             <h2>Casagrand Cosmos – 2 & 3 BHK Apartments</h2>
             <h4 className="location">VISWANATHAPURAM, COIMBATORE</h4>
-            <a href="#contact" className="contact-btn">Contact Now</a>
+            <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
 
             <div className="villa-details">
                 <div><strong>Project Type:</strong> Apartment</div>
@@ -442,7 +442,7 @@ function Coimbatore(){
 
             <h2>Prozone Palms – 1, 2 & 3 BHK Apartments</h2>
             <h4 className="location">SARAVANAMPATTI, COIMBATORE</h4>
-            <a href="#contact" className="contact-btn">Contact Now</a>
+            <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
 
             <div className="villa-details">
                 <div><strong>Project Type:</strong> Apartment</div>
@@ -493,7 +493,7 @@ function Coimbatore(){
 
             <h2>Casagrand Cosmos – 3 & 4 BHK Villas</h2>
             <h4 className="location">VISWANATHAPURAM, COIMBATORE</h4>
-            <a href="#contact" className="contact-btn">Contact Now</a>
+            <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
 
             <div className="villa-details">
                 <div><strong>Project Type:</strong> Villa</div>
