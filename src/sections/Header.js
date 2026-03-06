@@ -2,21 +2,26 @@ import '../css/style-1.css';
 import '../css/style-2.css';
 import '../css/style.css';
 
-import { useEffect } from "react";
-import * as bootstrap from "bootstrap";
+import { useEffect,useState } from "react";
 import logo from '../images/logo.jpeg'
 import {Link} from 'react-router-dom';
 
 
-const closeMenu = () => {
-  const navbar = document.getElementById("navbarCollapse");
-  const bsCollapse = bootstrap.Collapse.getInstance(navbar);
-  if (bsCollapse) {
-    bsCollapse.hide();
-  }
-};
-
 function Header(){
+
+    const [menuOpen, setMenuOpen] = useState(false)
+    const [propertiesOpen, setPropertiesOpen] = useState(false)
+    const [servicesOpen, setServicesOpen] = useState(false)
+
+    const toggleMenu = () => setMenuOpen(!menuOpen)
+    const toggleProperties = () => setPropertiesOpen(!propertiesOpen)
+    const toggleServices = () => setServicesOpen(!servicesOpen)
+
+    const closeMenu = () => {
+    setMenuOpen(false)
+    setPropertiesOpen(false)
+    setServicesOpen(false)
+}
     
     return(
             <>
@@ -55,7 +60,7 @@ function Header(){
                 {/* Topbar End */}
 
                 {/* Navbar Start */}
-                <nav className="navbar navbar-expand-lg main-navbar">
+                <nav className="navbar navbar-expand-lg main-navbar desktop-menu">
                     <div className="container-fluid px-lg-5">
                     <a href="/" className="navbar-brand logo">
                         <img src={logo} className='navbar-com-logo'></img>
@@ -113,6 +118,62 @@ function Header(){
                     </div>
                 </nav>
                 {/* Navbar End */}
+
+
+
+                {/* ===== MOBILE MENU ===== */}
+                <div className="mobile-menu">
+
+                <div className="mobile-header">
+                    <img src={logo} className="mobile-logo" />
+                    <button className="menu-toggle" onClick={toggleMenu}>
+                    ☰
+                    </button>
+                </div>
+
+                <div className={`mobile-nav ${menuOpen ? "open" : ""}`}>
+
+                    <Link to="/" className="mobile-link" onClick={closeMenu}>Home</Link>
+                    <Link to="/about" className="mobile-link" onClick={closeMenu}>About</Link>
+
+                    {/* Properties */}
+                    <div className="mobile-dropdown">
+                    <button onClick={toggleProperties} className="mobile-dropdown-btn">
+                        Properties
+                    </button>
+
+                    {propertiesOpen && (
+                        <div className="mobile-dropdown-menu">
+                        <Link to="/Properties/Chennai" onClick={closeMenu}>Chennai</Link>
+                        <Link to="/Properties/Coimbatore" onClick={closeMenu}>Coimbatore</Link>
+                        </div>
+                    )}
+                    </div>
+
+                    {/* Services */}
+                    <div className="mobile-dropdown">
+                    <button onClick={toggleServices} className="mobile-dropdown-btn">
+                        Services
+                    </button>
+
+                    {servicesOpen && (
+                        <div className="mobile-dropdown-menu">
+                        <Link to="/Services/PropertyDevelopment" onClick={closeMenu}>Property Development</Link>
+                        <Link to="/Services/PropertySales" onClick={closeMenu}>Property Sales</Link>
+                        <Link to="/Services/PropertyInvestmentConsulting" onClick={closeMenu}>Property Investment Consulting</Link>
+                        <Link to="/Services/LegalDocumentationSupport" onClick={closeMenu}>Legal & Documentation Support</Link>
+                        </div>
+                    )}
+                    </div>
+
+                    <Link to="/Contact" className="mobile-link" onClick={closeMenu}>Contact</Link>
+
+                    <a href="tel:+919444386103" className="mobile-join-btn">
+                    Join Us
+                    </a>
+
+                </div>
+                </div>
         </>
     );
 }
