@@ -53,7 +53,7 @@ function Contact(){
                         <i className="fa-solid fa-envelope"></i>
                         </div>
                         <h3 className='pb-3'>Email</h3>
-                        <a href='mailto:sales@liyarealty.com'>sales@liyarealty.com</a>
+                        <a href='mailto:sales@liyagroups.in'>sales@liyagroups.in</a>
                     </div>
 
                     <div className="col-12 col-lg-3 contact-page-card">

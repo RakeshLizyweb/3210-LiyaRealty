@@ -47,6 +47,7 @@ function App() {
         </Routes>
 
         <Footer/>
+        <WhasappFloat/>
       
       </Router>
       
@@ -54,6 +55,20 @@ function App() {
   );
 }
 
+function WhasappFloat(){
+  return(
+    <>
+    
+  <div class="wat-float">
+    <a class="wat-float-btn" href="https://wa.me/+919444386103?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services.%20Please%20share%20the%20details" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp wat-float-btn-icon"></i>
+      <span class="wat-float-online"></span>
+    </a>
+  </div>
+    </>
+
+  );
+}
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();

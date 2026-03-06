@@ -22,8 +22,7 @@ function Footer(){
                 </a>
 
                 <p className='text-black pt-3' >
-                    Labore dolor amet ipsum ea, erat sit ipsum duo eos. Volup amet ea
-                    dolor et magna dolor, elitr rebum duo est sed diam elitr.
+                    Liya Realty, established in 2018, is built on commitment, transparency, and excellence. We help clients find the right residential and commercial properties with trusted guidance and value-added services.
                 </p>
 
                 <div className="d-flex justify-content-start mt-4">
@@ -101,7 +100,7 @@ function Footer(){
                     <h4 className="fa fa-envelope foot-git-icon"></h4>
                     <div className="pl-3">
                     <h5 className="text-black">Email</h5>
-                    <a href='mailto:sales@liyarealty.com'>sales@liyarealty.com</a>
+                    <a href='mailto:sales@liyagroups.in'>sales@liyagroups.in</a>
                     </div>
                 </div>
 

@@ -65,137 +65,140 @@ function Coimbatore(){
                  </div>
                </section> 
 
-<div className="villa-content">
-  <h1 className="section-title">
-   <h1>Properties in Coimbatore</h1> 
-  </h1>
 
-  <p className="section-subtitle">
-    Experience thoughtfully designed homes crafted for modern lifestyles.
-  </p>
-</div>
+            <div className="villa-content">
+              <h1 className="section-title">
+              <h1>Properties in Coimbatore</h1> 
+              </h1>
+
+              <p className="section-subtitle">
+                Experience thoughtfully designed homes crafted for modern lifestyles.
+              </p>
+            </div>
 
 
                
-               <section className="villa-section">
-  <div className="villa-container">
+        <section className="villa-section">
+          <div className="villa-container">
 
-    {/* Left Image */}
-    <div className="villa-image">
-      <img src={ghats} alt="G Square Western Ghats" />
-      <div className="villa-badge">Residential Plots</div>
-    </div>
+            {/* Left Image */}
+            <div className="villa-image">
+              <img src={ghats} alt="G Square Western Ghats" />
+              <div className="villa-badge">Residential Plots</div>
+            </div>
 
-    {/* Right Content */}
-    <div className="villa-content">
+            {/* Right Content */}
+            <div className="villa-content">
 
-      <h2>G Square Western Ghats – Premium Residential Plots</h2>
-      <h4 className="location">PALANTHURAI ROAD, COIMBATORE</h4>
-      <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
+              <h2>G Square Western Ghats – Premium Residential Plots</h2>
+              <h4 className="location">PALANTHURAI ROAD, COIMBATORE</h4>
+              <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
 
-      <div className="villa-details">
+              <div className="villa-details">
 
-        <div><strong>Project Type:</strong> Residential Plots</div>
-        <div><strong>Plot Size:</strong> 3 - 4 Cents</div>
-        <div><strong>Location:</strong> Palanthurai Road</div>
-        <div><strong>Approval:</strong> DTCP Approved</div>
+                <div><strong>Project Type:</strong> Residential Plots</div>
+                <div><strong>Plot Size:</strong> 3 - 4 Cents</div>
+                <div><strong>Location:</strong> Palanthurai Road</div>
+                <div><strong>Approval:</strong> DTCP Approved</div>
 
-      </div>
+              </div>
 
-      <div className="overview">
-        <h5>Project Overview</h5>
-        <p>
-          G Square Western Ghats offers premium residential plots 
-          located on Palanthurai Road, Coimbatore.
-          Designed for peaceful living amidst nature, the project 
-          provides well-planned plots ranging from 3 to 4 cents.
-          With clear titles and DTCP approval, it is ideal for 
-          building your dream home in a serene and fast-developing area.
-          Excellent connectivity to major schools, colleges, 
-          hospitals and commercial hubs ensures convenience and value appreciation.
-        </p>
-      </div>
+              <div className="overview">
+                <h5>Project Overview</h5>
+                <p>
+                  G Square Western Ghats offers premium residential plots 
+                  located on Palanthurai Road, Coimbatore.
+                  Designed for peaceful living amidst nature, the project 
+                  provides well-planned plots ranging from 3 to 4 cents.
+                  With clear titles and DTCP approval, it is ideal for 
+                  building your dream home in a serene and fast-developing area.
+                  Excellent connectivity to major schools, colleges, 
+                  hospitals and commercial hubs ensures convenience and value appreciation.
+                </p>
+              </div>
 
-      <div className="amenities">
-        <h5>Amenities</h5>
-        <ul>
-          <li><i class="fa-solid fa-house"/>Blacktop Internal Roads</li>
-          <li><i class="fa-solid fa-house"/>Street Lighting</li>
-          <li><i class="fa-solid fa-house"/>24/7 Security</li>
-          <li><i class="fa-solid fa-house"/>Gated Community</li>
-          <li><i class="fa-solid fa-house"/>Landscaped Entrance Arch</li>
-          <li><i class="fa-solid fa-house"/>Clear Title Property</li>
-          <li><i class="fa-solid fa-house"/>Water Connection Provision</li>
-          <li><i class="fa-solid fa-house"/>Drainage System</li>
-          <li><i class="fa-solid fa-house"/>Rainwater Harvesting</li>
-          <li><i class="fa-solid fa-house"/>Tree-Lined Avenues</li>
-          <li><i class="fa-solid fa-house"/>Children’s Play Area</li>
-          <li><i class="fa-solid fa-house"/>Green Open Spaces</li>
-        </ul>
-      </div>
+              <div className="amenities">
+                <h5>Amenities</h5>
+                <ul>
+                  <li><i class="fa-solid fa-house"/>Blacktop Internal Roads</li>
+                  <li><i class="fa-solid fa-house"/>Street Lighting</li>
+                  <li><i class="fa-solid fa-house"/>24/7 Security</li>
+                  <li><i class="fa-solid fa-house"/>Gated Community</li>
+                  <li><i class="fa-solid fa-house"/>Landscaped Entrance Arch</li>
+                  <li><i class="fa-solid fa-house"/>Clear Title Property</li>
+                  <li><i class="fa-solid fa-house"/>Water Connection Provision</li>
+                  <li><i class="fa-solid fa-house"/>Drainage System</li>
+                  <li><i class="fa-solid fa-house"/>Rainwater Harvesting</li>
+                  <li><i class="fa-solid fa-house"/>Tree-Lined Avenues</li>
+                  <li><i class="fa-solid fa-house"/>Children’s Play Area</li>
+                  <li><i class="fa-solid fa-house"/>Green Open Spaces</li>
+                </ul>
+              </div>
 
-    </div>
-  </div>
-</section>
-<section className="villa-section">
-  <div className="villa-container">
+            </div>
+          </div>
+        </section>
 
-    {/* Left Image */}
-    <div className="villa-image">
-      <img src={blossom} alt="G Square Blossom" />
-      <div className="villa-badge">Residential Plots</div>
-    </div>
+        <section className="villa-section">
+          <div className="villa-container">
 
-    {/* Right Content */}
-    <div className="villa-content">
+            {/* Left Image */}
+            <div className="villa-image">
+              <img src={blossom} alt="G Square Blossom" />
+              <div className="villa-badge">Residential Plots</div>
+            </div>
 
-      <h2>G Square Blossom – Premium Residential Plots</h2>
-      <h4 className="location">AVINASHI, COIMBATORE</h4>
-      <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
+            {/* Right Content */}
+            <div className="villa-content">
 
-      <div className="villa-details">
+              <h2>G Square Blossom – Premium Residential Plots</h2>
+              <h4 className="location">AVINASHI, COIMBATORE</h4>
+              <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
 
-        <div><strong>Project Type:</strong> Residential Plots</div>
-        <div><strong>Price Range:</strong> ₹19.50 Lakhs Onwards</div>
-        <div><strong>Plot Size:</strong> 3 - 4 Cents</div>
-        <div><strong>Approval:</strong> DTCP Approved</div>
+              <div className="villa-details">
 
-      </div>
+                <div><strong>Project Type:</strong> Residential Plots</div>
+                <div><strong>Price Range:</strong> ₹19.50 Lakhs Onwards</div>
+                <div><strong>Plot Size:</strong> 3 - 4 Cents</div>
+                <div><strong>Approval:</strong> DTCP Approved</div>
 
-      <div className="overview">
-        <h5>Project Overview</h5>
-        <p>
-          G Square Blossom offers premium residential plots in Avinashi, Coimbatore,
-          starting from ₹19.50 Lakhs onwards. The project features well-planned
-          3 to 4 cents plots within a secure gated community.
-          Located in a rapidly developing area, it provides excellent connectivity
-          to Avinashi Road, educational institutions, hospitals and commercial hubs.
-          With clear title and DTCP approval, it is an ideal investment opportunity
-          and perfect for building your dream home.
-        </p>
-      </div>
+              </div>
 
-      <div className="amenities">
-        <h5>Amenities</h5>
-        <ul>
-          <li><i class="fa-solid fa-house"/>Gated Community</li>
-          <li><i class="fa-solid fa-house"/>Blacktop Internal Roads</li>
-          <li><i class="fa-solid fa-house"/>Street Lights</li>
-          <li><i class="fa-solid fa-house"/>24/7 Security</li>
-          <li><i class="fa-solid fa-house"/>Landscaped Entrance</li>
-          <li><i class="fa-solid fa-house"/>Water Line Provision</li>
-          <li><i class="fa-solid fa-house"/>Drainage System</li>
-          <li><i class="fa-solid fa-house"/>Rainwater Harvesting</li>
-          <li><i class="fa-solid fa-house"/>Children’s Play Area</li>
-          <li><i class="fa-solid fa-house"/>Green Open Spaces</li>
-          <li><i class="fa-solid fa-house"/>Clear Title Property</li>
-          <li><i class="fa-solid fa-house"/>DTCP Approved Layout</li>
-        </ul>
-      </div>
+              <div className="overview">
+                <h5>Project Overview</h5>
+                <p>
+                  G Square Blossom offers premium residential plots in Avinashi, Coimbatore,
+                  starting from ₹19.50 Lakhs onwards. The project features well-planned
+                  3 to 4 cents plots within a secure gated community.
+                  Located in a rapidly developing area, it provides excellent connectivity
+                  to Avinashi Road, educational institutions, hospitals and commercial hubs.
+                  With clear title and DTCP approval, it is an ideal investment opportunity
+                  and perfect for building your dream home.
+                </p>
+              </div>
 
-    </div>
-  </div>
-</section>
+              <div className="amenities">
+                <h5>Amenities</h5>
+                <ul>
+                  <li><i class="fa-solid fa-house"/>Gated Community</li>
+                  <li><i class="fa-solid fa-house"/>Blacktop Internal Roads</li>
+                  <li><i class="fa-solid fa-house"/>Street Lights</li>
+                  <li><i class="fa-solid fa-house"/>24/7 Security</li>
+                  <li><i class="fa-solid fa-house"/>Landscaped Entrance</li>
+                  <li><i class="fa-solid fa-house"/>Water Line Provision</li>
+                  <li><i class="fa-solid fa-house"/>Drainage System</li>
+                  <li><i class="fa-solid fa-house"/>Rainwater Harvesting</li>
+                  <li><i class="fa-solid fa-house"/>Children’s Play Area</li>
+                  <li><i class="fa-solid fa-house"/>Green Open Spaces</li>
+                  <li><i class="fa-solid fa-house"/>Clear Title Property</li>
+                  <li><i class="fa-solid fa-house"/>DTCP Approved Layout</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
         <section className="villa-section">
         <div className="villa-container">
 
@@ -430,6 +433,59 @@ function Coimbatore(){
             </div>
         </div>
         </section>
+
+          <section className="villa-section">
+        <div className="villa-container">
+
+            <div className="villa-image">
+            <img src={kosmos}alt="Casagrand Cosmos Villa" />
+            <div className="villa-badge">Luxury Villas</div>
+            </div>
+
+            <div className="villa-content">
+
+            <h2>Casagrand Cosmos – 3 & 4 BHK Villas</h2>
+            <h4 className="location">VISWANATHAPURAM, COIMBATORE</h4>
+            <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
+
+            <div className="villa-details">
+                <div><strong>Project Type:</strong> Villa</div>
+                <div><strong>Price Range:</strong> ₹33 Lakhs Onwards</div>
+                <div><strong>BedRooms:</strong> 3 & 4 BHK</div>
+                <div><strong>Property Area:</strong> 2500 SqFt - 3441 SqFt</div>
+            </div>
+
+            <div className="overview">
+                <h5>Project Overview</h5>
+                <p>
+                Casagrand Cosmos Villas offer spacious 3 & 4 BHK homes
+                in Viswanathapuram, Coimbatore. Starting from ₹33 Lakhs onwards,
+                these villas range between 2500 SqFt to 3441 SqFt.
+                Designed with contemporary architecture and premium finishes,
+                the project provides privacy, comfort and superior lifestyle amenities
+                within a secure gated community.
+                </p>
+            </div>
+
+            <div className="amenities">
+                <h5>Amenities</h5>
+                <ul>
+                <li><i class="fa-solid fa-house"/>Private Garden Space</li>
+                <li><i class="fa-solid fa-house"/>Clubhouse</li>
+                <li><i class="fa-solid fa-house"/>Gym</li>
+                <li><i class="fa-solid fa-house"/>Multipurpose Hall</li>
+                <li><i class="fa-solid fa-house"/>Children’s Play Area</li>
+                <li><i class="fa-solid fa-house"/>Power Backup</li>
+                <li><i class="fa-solid fa-house"/>Gated Community</li>
+                <li><i class="fa-solid fa-house"/>24/7 Security</li>
+                </ul>
+            </div>
+
+            </div>
+        </div>
+        </section>
+
+
         <section className="villa-section">
         <div className="villa-container">
 
@@ -481,56 +537,7 @@ function Coimbatore(){
             </div>
         </div>
         </section>
-        <section className="villa-section">
-        <div className="villa-container">
-
-            <div className="villa-image">
-            <img src={kosmos}alt="Casagrand Cosmos Villa" />
-            <div className="villa-badge">Luxury Villas</div>
-            </div>
-
-            <div className="villa-content">
-
-            <h2>Casagrand Cosmos – 3 & 4 BHK Villas</h2>
-            <h4 className="location">VISWANATHAPURAM, COIMBATORE</h4>
-            <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
-
-            <div className="villa-details">
-                <div><strong>Project Type:</strong> Villa</div>
-                <div><strong>Price Range:</strong> ₹33 Lakhs Onwards</div>
-                <div><strong>BedRooms:</strong> 3 & 4 BHK</div>
-                <div><strong>Property Area:</strong> 2500 SqFt - 3441 SqFt</div>
-            </div>
-
-            <div className="overview">
-                <h5>Project Overview</h5>
-                <p>
-                Casagrand Cosmos Villas offer spacious 3 & 4 BHK homes
-                in Viswanathapuram, Coimbatore. Starting from ₹33 Lakhs onwards,
-                these villas range between 2500 SqFt to 3441 SqFt.
-                Designed with contemporary architecture and premium finishes,
-                the project provides privacy, comfort and superior lifestyle amenities
-                within a secure gated community.
-                </p>
-            </div>
-
-            <div className="amenities">
-                <h5>Amenities</h5>
-                <ul>
-                <li><i class="fa-solid fa-house"/>Private Garden Space</li>
-                <li><i class="fa-solid fa-house"/>Clubhouse</li>
-                <li><i class="fa-solid fa-house"/>Gym</li>
-                <li><i class="fa-solid fa-house"/>Multipurpose Hall</li>
-                <li><i class="fa-solid fa-house"/>Children’s Play Area</li>
-                <li><i class="fa-solid fa-house"/>Power Backup</li>
-                <li><i class="fa-solid fa-house"/>Gated Community</li>
-                <li><i class="fa-solid fa-house"/>24/7 Security</li>
-                </ul>
-            </div>
-
-            </div>
-        </div>
-        </section>
+      
 
 
         <Cta/>

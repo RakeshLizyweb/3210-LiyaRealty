@@ -25,7 +25,7 @@ function Header(){
                             </small>
                             <span className="divider">|</span>
                             <small className='top-contact-info'>
-                            <a  className='Header-contact-link' href='mailto:sales@liyarealty.com'><i className="fa fa-envelope me-2"></i>sales@liyarealty.com</a>
+                            <a  className='Header-contact-link' href='mailto:sales@liyagroups.in'><i className="fa fa-envelope me-2"></i>sales@liyagroups.in</a>
                             </small>
                         </div>
                         </div>

@@ -2,12 +2,13 @@ import '../css/style-1.css';
 import '../css/style-2.css';
 import '../css/style.css';
 
-import gallery2 from "../images/images-1/gallery/gallery2.jpg";
+import utopia from "../images/images-1/utopia.jpg";
 import chennaipath from "../images/images-1/chennai.jpg";
 import radiance from"../images/images-1/radiancesuprema.jpg";
 import blue from"../images/images-1/bluewalllahari.jpg";
-import gayatri from"../images/images-1/gayatri.jpg"
-import shakti from"../images/images-1/shakti.jpg"
+import gayatri from"../images/images-1/gayatri.jpg";
+import shakti from"../images/images-1/shakti.jpg";
+import RadiaRecidencia from"../images/images-1/Radia-recidencia.jpg";
 
 
 import Cta from '../sections/Cta';
@@ -71,12 +72,133 @@ function Chennai(){
                 Experience thoughtfully designed homes crafted for modern lifestyles.
             </p>
             </div>
+
+             <section className="villa-section">
+            <div className="villa-container">
+
+                {/* Left Image */}
+                <div className="villa-image">
+                <img src={radiance}alt="Radiance Suprema" />
+                <div className="villa-badge">Luxury Apartments</div>
+                </div>
+
+                {/* Right Content */}
+                <div className="villa-content">
+
+                <h2>Radiance Suprema – 2, 3 & 4 BHK Luxury Apartments</h2>
+                <h4 className="location">MADHAVARAM, CHENNAI</h4>
+                <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
+
+                <div className="villa-details">
+
+                    <div><strong>Project Type:</strong> Apartments</div>
+                    <div><strong>Property Area:</strong> 992 - 1422 Sqft</div>
+                    <div><strong>BedRooms:</strong> 2, 3 and 4</div>
+                    <div><strong>Floors:</strong> High-Rise Towers</div>
+
+                </div>
+
+                <div className="overview">
+                    <h5>Project Overview</h5>
+                    <p>
+                    Starting from ₹95 Lakhs onwards. Radiance Suprema is a premium residential 
+                    development offering spacious 2, 3 & 4 BHK luxury apartments in Madhavaram, Chennai.
+                    Designed with contemporary architecture and superior specifications,
+                    the project offers a refined urban lifestyle.
+                    Strategically located with excellent connectivity to Anna Nagar, 
+                    Kolathur and key commercial hubs.
+                    Homes are Vaastu compliant and designed for maximum ventilation 
+                    with thoughtfully planned living spaces.
+                    The project features expansive landscaped areas and modern lifestyle amenities.
+                    </p>
+                </div>
+
+                <div className="amenities">
+                    <h5>Amenities</h5>
+                    <ul>
+                    <li><i class="fa-solid fa-house"></i>Grand Clubhouse</li>
+                    <li><i class="fa-solid fa-house"></i>Swimming Pool</li>
+                    <li><i class="fa-solid fa-house"></i>Fully Equipped Gym</li>
+                    <li><i class="fa-solid fa-house"></i>Multipurpose Hall</li>
+                    <li><i class="fa-solid fa-house"></i>Indoor Games Room</li>
+                    <li><i class="fa-solid fa-house"></i>Children’s Play Area</li>
+                    <li><i class="fa-solid fa-house"></i>Landscaped Gardens</li>
+                    <li><i class="fa-solid fa-house"></i>Jogging Track</li>
+                    <li><i class="fa-solid fa-house"></i>CCTV Surveillance</li>
+                    <li><i class="fa-solid fa-house"></i>Power Backup</li>
+                    <li><i class="fa-solid fa-house"></i>Rainwater Harvesting</li>
+                    <li><i class="fa-solid fa-house"></i>24/7 Security</li>
+                    </ul>
+                </div>
+
+                </div>
+            </div>
+            </section>
+
+
+
+          <section className="villa-section">
+            <div className="villa-container">
+
+                {/* Left Image */}
+                <div className="villa-image">
+                <img src={RadiaRecidencia} alt="Radiance Residencia" />
+                <div className="villa-badge">Premium Plots</div>
+                </div>
+
+                {/* Right Content */}
+                <div className="villa-content">
+
+                <h2>Radiance Residencia – Premium Residential Plots</h2>
+                <h4 className="location">THAIYUR, OMR</h4>
+                <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
+
+                <div className="villa-details">
+
+                    <div><strong>Project Type:</strong> Plots</div>
+                    <div><strong>Property Area:</strong> 982 - 2956 SqFt</div>
+                    <div><strong>Price Range:</strong> ₹ 55 Lakhs - 83 Lakhs</div>
+                    <div><strong>Location:</strong> Thaiyur, OMR</div>
+
+                </div>
+
+                <div className="overview">
+                    <h5>Project Overview</h5>
+                    <p>
+                    Radiance Residencia offers premium residential plots located in Thaiyur on OMR,
+                    one of the fastest growing residential corridors in Chennai.
+                    The project provides well-planned plots ranging from 982 to 2956 SqFt,
+                    ideal for building your dream home in a peaceful and well-connected area.
+                    With easy access to IT hubs, educational institutions and daily conveniences,
+                    Radiance Residencia is a perfect investment for future living.
+                    </p>
+                </div>
+
+                <div className="amenities">
+                    <h5>Amenities</h5>
+                    <ul>
+                    <li><i class="fa-solid fa-house"></i>Gated Community</li>
+                    <li><i class="fa-solid fa-house"></i>Blacktop Roads</li>
+                    <li><i class="fa-solid fa-house"></i>Street Lighting</li>
+                    <li><i class="fa-solid fa-house"></i>Children’s Play Area</li>
+                    <li><i class="fa-solid fa-house"></i>Landscaped Parks</li>
+                    <li><i class="fa-solid fa-house"></i>24/7 Security</li>
+                    <li><i class="fa-solid fa-house"></i>Drainage System</li>
+                    <li><i class="fa-solid fa-house"></i>Water Supply</li>
+                    </ul>
+                </div>
+
+                </div>
+            </div>
+        </section>
+
+
             <section className="villa-section">
             <div className="villa-container">
 
                 {/* Left Image */}
                 <div className="villa-image">
-                <img src={gallery2} alt="Casagrand Utopia View 2" />
+                <img src={utopia} alt="Casagrand Utopia View 2" />
                 <div className="villa-badge">Premium Apartments</div>
                 </div>
 
@@ -130,67 +252,7 @@ function Chennai(){
                 </div>
             </div>
             </section>
-            <section className="villa-section">
-            <div className="villa-container">
-
-                {/* Left Image */}
-                <div className="villa-image">
-                <img src={radiance}alt="Radiance Suprema" />
-                <div className="villa-badge">Luxury Apartments</div>
-                </div>
-
-                {/* Right Content */}
-                <div className="villa-content">
-
-                <h2>Radiance Suprema – 2, 3 & 4 BHK Luxury Apartments</h2>
-                <h4 className="location">MADHAVARAM, CHENNAI</h4>
-                <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
-
-                <div className="villa-details">
-
-                    <div><strong>Project Type:</strong> Apartments</div>
-                    <div><strong>Property Area:</strong> 1300 - 2500 Sqft</div>
-                    <div><strong>BedRooms:</strong> 2, 3 and 4</div>
-                    <div><strong>Floors:</strong> High-Rise Towers</div>
-
-                </div>
-
-                <div className="overview">
-                    <h5>Project Overview</h5>
-                    <p>
-                    Starting from ₹95 Lakhs onwards. Radiance Suprema is a premium residential 
-                    development offering spacious 2, 3 & 4 BHK luxury apartments in Madhavaram, Chennai.
-                    Designed with contemporary architecture and superior specifications,
-                    the project offers a refined urban lifestyle.
-                    Strategically located with excellent connectivity to Anna Nagar, 
-                    Kolathur and key commercial hubs.
-                    Homes are Vaastu compliant and designed for maximum ventilation 
-                    with thoughtfully planned living spaces.
-                    The project features expansive landscaped areas and modern lifestyle amenities.
-                    </p>
-                </div>
-
-                <div className="amenities">
-                    <h5>Amenities</h5>
-                    <ul>
-                    <li><i class="fa-solid fa-house"></i>Grand Clubhouse</li>
-                    <li><i class="fa-solid fa-house"></i>Swimming Pool</li>
-                    <li><i class="fa-solid fa-house"></i>Fully Equipped Gym</li>
-                    <li><i class="fa-solid fa-house"></i>Multipurpose Hall</li>
-                    <li><i class="fa-solid fa-house"></i>Indoor Games Room</li>
-                    <li><i class="fa-solid fa-house"></i>Children’s Play Area</li>
-                    <li><i class="fa-solid fa-house"></i>Landscaped Gardens</li>
-                    <li><i class="fa-solid fa-house"></i>Jogging Track</li>
-                    <li><i class="fa-solid fa-house"></i>CCTV Surveillance</li>
-                    <li><i class="fa-solid fa-house"></i>Power Backup</li>
-                    <li><i class="fa-solid fa-house"></i>Rainwater Harvesting</li>
-                    <li><i class="fa-solid fa-house"></i>24/7 Security</li>
-                    </ul>
-                </div>
-
-                </div>
-            </div>
-            </section>
+           
             <section className="villa-section">
             <div className="villa-container">
 
