@@ -2,9 +2,19 @@ import '../css/style-1.css';
 import '../css/style-2.css';
 import '../css/style.css';
 
-
+import { useEffect } from "react";
+import * as bootstrap from "bootstrap";
 import logo from '../images/logo.jpeg'
 import {Link} from 'react-router-dom';
+
+
+const closeMenu = () => {
+  const navbar = document.getElementById("navbarCollapse");
+  const bsCollapse = bootstrap.Collapse.getInstance(navbar);
+  if (bsCollapse) {
+    bsCollapse.hide();
+  }
+};
 
 function Header(){
     
@@ -65,8 +75,8 @@ function Header(){
                         id="navbarCollapse"
                     >
                         <div className="navbar-nav mx-auto">
-                        <Link to="/" className="nav-link">Home</Link>
-                        <Link to="/about" className="nav-link">About</Link>
+                        <Link to="/" className="nav-link" onClick={closeMenu}>Home</Link>
+                        <Link to="/about" className="nav-link" onClick={closeMenu}>About</Link>
 
                         {/* Hover Dropdown */}
                         <div className="nav-item dropdown custom-dropdown">
@@ -76,8 +86,8 @@ function Header(){
                                 data-bs-toggle="dropdown"
                                 aria-expanded="true">Properties</a>
                             <div className="dropdown-menu">
-                            <Link to="/Properties/Chennai" className="dropdown-item">Chennai</Link>
-                            <Link to="/Properties/Coimbatore" className="dropdown-item">Coimbatore</Link>
+                            <Link to="/Properties/Chennai" className="dropdown-item" onClick={closeMenu}>Chennai</Link>
+                            <Link to="/Properties/Coimbatore" className="dropdown-item" onClick={closeMenu}>Coimbatore</Link>
                             </div>
                         </div>
 
@@ -88,14 +98,14 @@ function Header(){
                                 data-bs-toggle="dropdown"
                                 aria-expanded="true">Services</a>
                             <div className="dropdown-menu">
-                            <Link to="/Services/PropertyDevelopment" className="dropdown-item">Property Development</Link>
-                            <Link to="/Services/PropertySales" className="dropdown-item">Property Sales</Link>
-                            <Link to="/Services/PropertyInvestmentConsulting" className="dropdown-item">Property Investment Consulting</Link>
-                            <Link to="/Services/LegalDocumentationSupport" className="dropdown-item">Legal & Documentation Support</Link>
+                            <Link to="/Services/PropertyDevelopment" className="dropdown-item" onClick={closeMenu}>Property Development</Link>
+                            <Link to="/Services/PropertySales" className="dropdown-item" onClick={closeMenu}>Property Sales</Link>
+                            <Link to="/Services/PropertyInvestmentConsulting" className="dropdown-item" onClick={closeMenu}>Property Investment Consulting</Link>
+                            <Link to="/Services/LegalDocumentationSupport" className="dropdown-item" onClick={closeMenu}>Legal & Documentation Support</Link>
                             </div>
                         </div>
 
-                        <Link to="/Contact" className="nav-link">Contact</Link>
+                        <Link to="/Contact" className="nav-link" onClick={closeMenu}>Contact</Link>
                         </div>
 
                         <a href="tel:+91 94443 86103" className="btn join-btn">Join Us</a>
