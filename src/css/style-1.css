@@ -12,6 +12,7 @@
   background: linear-gradient(90deg,#5286fb, #4379f7);
   color: #fff;
   font-size: 14px;
+  padding:12px 0px;
 }
 
 .Header-contact-link{
@@ -147,7 +148,7 @@
 /* ===== MOBILE ===== */
 @media (max-width: 991px) {
   .topbar {
-    text-align: center;
+    display:none;
   }
 
   .navbar-nav {
