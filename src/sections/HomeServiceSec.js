@@ -15,6 +15,7 @@ import pride from "../images/images-1/gsquare-pride.jpg";
 import ghats from "../images/images-1/gsquare-western-ghats.jpg"
 import cosmos2 from "../images/images-1/kosmo.jpg"
 import tvhcrest from "../images/images-1/tvhcrest.jpg";
+import tvhSerenity from "../images/images-1/tvhserenity.jpg";
 
 // chennai
 import utopia from "../images/images-1/utopia.jpg";
@@ -29,12 +30,20 @@ function HomeServiceSec(){
 
         const properties = [
     {
+        image: tvhSerenity,
+        title: "TVH Serenity",
+        location: "Avinashi, Coimbatore",
+        size: `2 BHK – 868 – 1055 Sqft`,
+        price: "₹ 56.5 Lakhs Onwards",
+        type: "Premium 2 BHK Flats"
+    },
+    {
         image: tvhcrest,
         title: "Tvh Crest",
         location: "Avinashi, Coimbatore",
-        size: "G+4 Floors",
-        price: "₹ 52.53 Lakhs Onwards ",
-        type: "1 bhk starts from 784 sqft"
+        size: `1 BHK – 784 SqFt \n 2 BHK – 1038 – 1154 SqFt`,
+        price: "1 BHK – ₹52.53 Lakhs onwards \n 2 BHK – ₹69.53 Lakhs onwards ",
+        type: "1 & 2 BHK"
     },
     {
         image: ghats,

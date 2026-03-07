@@ -12,7 +12,7 @@
   background: linear-gradient(90deg,#5286fb, #4379f7);
   color: #fff;
   font-size: 14px;
-  padding:12px 0px;
+  padding:3px 0px;
 }
 
 .Header-contact-link{
@@ -751,10 +751,13 @@
 }
 
 .homeServiceSize {
+  white-space: pre-line;
   font-weight:800;
   color: #030026;
 }
-
+.homeServicePrice{
+  white-space: pre-line;
+}
 
 .homeServiceBtn {
   display: inline-block;

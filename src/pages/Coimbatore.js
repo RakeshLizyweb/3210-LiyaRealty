@@ -12,6 +12,8 @@ import blossom from"../images/images-1/gsquare-blossom.jpg";
 import pride from"../images/images-1/gsquare-pride.jpg";
 import ghats from"../images/images-1/gsquare-western-ghats.jpg"
 import kosmos from"../images/images-1/kosmo.jpg"
+import tvhcrest from "../images/images-1/tvhcrest.jpg";
+import tvhSerenity from "../images/images-1/tvhserenity.jpg";
 
 import Cta from '../sections/Cta';
 
@@ -75,6 +77,121 @@ function Coimbatore(){
                 Experience thoughtfully designed homes crafted for modern lifestyles.
               </p>
             </div>
+
+
+
+            <section className="villa-section">
+              <div className="villa-container">
+
+                {/* Left Image */}
+                <div className="villa-image">
+                  <img src={tvhSerenity} alt="TVH Serenity" />
+                  <div className="villa-badge">Premium 2 BHK Flats</div>
+                </div>
+
+                {/* Right Content */}
+                <div className="villa-content">
+
+                  <h2>TVH Serenity – Premium 2 BHK Flats</h2>
+                  <h4 className="location">AVINASHI, COIMBATORE</h4>
+                  <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
+
+                  <div className="villa-details">
+
+                    <div><strong>Project Type:</strong> Residential Apartments</div>
+                    <div><strong>Flat Size:</strong> 2 BHK – 868 – 1055 Sqft</div>
+                    <div><strong>Location:</strong> Avinashi</div>
+                    <div><strong>Price:</strong> ₹ 56.5 Lakhs Onwards</div>
+
+                  </div>
+
+                  <div className="overview">
+                    <h5>Project Overview</h5>
+                    <p>
+                      TVH Serenity offers thoughtfully designed 2 BHK apartments in Avinashi, Coimbatore.
+                      The project is crafted to provide comfortable and modern living spaces for families.
+                      With spacious layouts ranging from 868 to 1055 Sqft, residents can enjoy a perfect
+                      balance of lifestyle and convenience. Located in a rapidly developing area, the
+                      property offers easy connectivity to key locations, educational institutions,
+                      healthcare centers and commercial hubs.
+                    </p>
+                  </div>
+
+                  <div className="amenities">
+                    <h5>Amenities</h5>
+                    <ul>
+                      <li><i class="fa-solid fa-house"/> Gated Community</li>
+                      <li><i class="fa-solid fa-house"/> 24/7 Security</li>
+                      <li><i class="fa-solid fa-house"/> Covered Car Parking</li>
+                      <li><i class="fa-solid fa-house"/> Power Backup</li>
+                      <li><i class="fa-solid fa-house"/> Lift Facility</li>
+                      <li><i class="fa-solid fa-house"/> Children’s Play Area</li>
+                      <li><i class="fa-solid fa-house"/> Landscaped Garden</li>
+                      <li><i class="fa-solid fa-house"/> CCTV Surveillance</li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </section>
+
+
+
+
+            <section className="villa-section">
+              <div className="villa-container">
+
+                {/* Left Image */}
+                <div className="villa-image">
+                  <img src={tvhcrest} alt="TVH Crest" />
+                  <div className="villa-badge">1 & 2 BHK Apartments</div>
+                </div>
+
+                {/* Right Content */}
+                <div className="villa-content">
+
+                  <h2>TVH Crest – Premium 1 & 2 BHK Apartments</h2>
+                  <h4 className="location">AVINASHI, COIMBATORE</h4>
+                  <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
+
+                  <div className="villa-details">
+
+                    <div><strong>Project Type:</strong> Residential Apartments</div>
+                    <div><strong>Flat Size:</strong> 1 BHK – 784 SqFt | 2 BHK – 1038 – 1154 SqFt</div>
+                    <div><strong>Location:</strong> Avinashi</div>
+                    <div><strong>Price:</strong> 1 BHK – ₹52.53 Lakhs | 2 BHK – ₹69.53 Lakhs</div>
+
+                  </div>
+
+                  <div className="overview">
+                    <h5>Project Overview</h5>
+                    <p>
+                      TVH Crest is a modern residential project located in Avinashi, Coimbatore,
+                      offering well-designed 1 and 2 BHK apartments. The project features
+                      spacious homes with efficient layouts that maximize comfort and functionality.
+                      With sizes ranging from 784 SqFt to 1154 SqFt, it provides ideal living
+                      spaces for individuals and families. The project enjoys excellent
+                      connectivity to major roads, workplaces, schools and lifestyle destinations.
+                    </p>
+                  </div>
+
+                  <div className="amenities">
+                    <h5>Amenities</h5>
+                    <ul>
+                      <li><i class="fa-solid fa-house"/> Gated Community</li>
+                      <li><i class="fa-solid fa-house"/> 24/7 Security</li>
+                      <li><i class="fa-solid fa-house"/> Covered Car Parking</li>
+                      <li><i class="fa-solid fa-house"/> Lift Facility</li>
+                      <li><i class="fa-solid fa-house"/> Power Backup</li>
+                      <li><i class="fa-solid fa-house"/> Children’s Play Area</li>
+                      <li><i class="fa-solid fa-house"/> Landscaped Garden</li>
+                      <li><i class="fa-solid fa-house"/> CCTV Surveillance</li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </section>
 
 
                
