@@ -81,12 +81,41 @@ function Contact(){
                         <div className="contact-page-form-card">
                         <h3 className="contact-page-form-title">Send Us a Message</h3>
 
-                        <form>
-                            <input type="text" className="contact-page-input" placeholder="Your Name" required />
-                            <input type="email" className="contact-page-input" placeholder="Your Email" required />
-                            <input type="tel" className="contact-page-input" placeholder="Your Phone" />
-                            <textarea className="contact-page-textarea" rows="4" placeholder="Your Message" required></textarea>
-                            <button type="submit" className="contact-page-button">Submit</button>
+                        <form action="mail.php" method="POST">
+                            <input 
+                                type="text" 
+                                name="name"
+                                className="contact-page-input" 
+                                placeholder="Your Name" 
+                                required 
+                            />
+
+                            <input 
+                                type="email" 
+                                name="email"
+                                className="contact-page-input" 
+                                placeholder="Your Email" 
+                                required 
+                            />
+
+                            <input 
+                                type="tel" 
+                                name="phone"
+                                className="contact-page-input" 
+                                placeholder="Your Phone" 
+                            />
+
+                            <textarea 
+                                name="comments"
+                                className="contact-page-textarea" 
+                                rows="4" 
+                                placeholder="Your Message" 
+                                required
+                            ></textarea>
+
+                            <button type="submit" className="contact-page-button">
+                                Submit
+                            </button>
                         </form>
                         </div>
                     </div>
