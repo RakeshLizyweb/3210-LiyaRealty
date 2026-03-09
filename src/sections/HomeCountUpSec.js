@@ -41,7 +41,7 @@ function HomeCountUpSec(){
                 <div className="homeStatsSectionContainer">
 
                     <div className="homeStatsSectionCard">
-                    <h2><Counter target={274} duration={2000} />+</h2>
+                    <h2><Counter target={600} duration={2000} />+</h2>
                     <p>Clients</p>
                     </div>
 

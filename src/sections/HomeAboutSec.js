@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../css/style-1.css';
 import '../css/style-2.css';
 import '../css/style.css';
@@ -40,9 +41,9 @@ function HomeAboutSec(){
                     covers both residential and commercial property investments.
                 </p>
 
-                <button className="homeAboutSectionBtn">
+                <Link to="/Services/PropertyDevelopment"  className="homeAboutSectionBtn">
                     Explore Our Services
-                </button>
+                </Link>
                 </div>
 
             </div>

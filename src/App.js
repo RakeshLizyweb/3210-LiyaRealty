@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 import './css/style-1.css';
@@ -48,7 +48,7 @@ function App() {
 
         <Footer/>
         <WhasappFloat/>
-      
+        <BackToTop/>
       </Router>
       
     </>
@@ -67,6 +67,47 @@ function WhasappFloat(){
   </div>
     </>
 
+  );
+}
+
+function BackToTop() {
+
+  
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+
+    const toggleVisibility = () => {
+      if (window.scrollY > 300) {
+        setVisible(true);
+      } else {
+        setVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", toggleVisibility);
+
+    return () => window.removeEventListener("scroll", toggleVisibility);
+
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
+  return (
+    <>
+      {visible && (
+        <div className="back-to-top">
+          <button className="back-to-top-btn" onClick={scrollToTop}>
+            <i className="fa-solid fa-arrow-up"></i>
+          </button>
+        </div>
+      )}
+    </>
   );
 }
 
