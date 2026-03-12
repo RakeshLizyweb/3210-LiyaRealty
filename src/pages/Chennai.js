@@ -13,421 +13,281 @@ import RadiaRecidencia from"../images/images-1/Radia-recidencia.jpg";
 
 import Cta from '../sections/Cta';
 
+function Chennai() {
 
-function Chennai(){
+const properties = [
+
+        {
+            image: radiance,
+            badge: "Luxury Apartments",
+            title: "Radiance Suprema – 2, 3 & 4 BHK Luxury Apartments",
+            location: "MADHAVARAM, CHENNAI",
+            details:{
+                type:"Apartments",
+                area:"992 - 1422 Sqft",
+                bedrooms:"2, 3 and 4",
+                extra:"High-Rise Towers"
+            },
+            overview:`Starting from ₹95 Lakhs onwards. Radiance Suprema offers spacious luxury apartments in Madhavaram with excellent connectivity to Anna Nagar and Kolathur.`,
+            amenities:[
+                "Grand Clubhouse",
+                "Swimming Pool",
+                "Fully Equipped Gym",
+                "Multipurpose Hall",
+                "Indoor Games Room",
+                "Children’s Play Area",
+                "Landscaped Gardens",
+                "Jogging Track",
+                "CCTV Surveillance",
+                "Power Backup",
+                "Rainwater Harvesting",
+                "24/7 Security"
+            ]
+        },
+
+        {
+            image: RadiaRecidencia,
+            badge: "Premium Plots",
+            title: "Radiance Residencia – Premium Residential Plots",
+            location: "THAIYUR, OMR",
+            details:{
+                type:"Plots",
+                area:"982 - 2956 SqFt",
+                bedrooms:"₹55 Lakhs - ₹83 Lakhs",
+                extra:"Thaiyur, OMR"
+            },
+            overview:`Radiance Residencia offers premium residential plots located in Thaiyur on OMR with excellent connectivity to IT hubs and educational institutions.`,
+            amenities:[
+                "Gated Community",
+                "Blacktop Roads",
+                "Street Lighting",
+                "Children’s Play Area",
+                "Landscaped Parks",
+                "24/7 Security",
+                "Drainage System",
+                "Water Supply"
+            ]
+        },
+
+        {
+            image: utopia,
+            badge: "Premium Apartments",
+            title: "Casagrand Utopia – 2 & 3 BHK Premium Apartments",
+            location: "MANAPAKKAM, CHENNAI",
+            details:{
+                type:"Apartments",
+                area:"1100 - 1800 Sqft",
+                bedrooms:"2 and 3",
+                extra:"Stilt + 5 Floors"
+            },
+            overview:`Casagrand Utopia offers premium apartments near DLF IT Park and Porur with modern architecture and lifestyle amenities.`,
+            amenities:[
+                "Landscaped Garden",
+                "Clubhouse",
+                "Swimming Pool",
+                "Fully Equipped Gym",
+                "Children’s Play Area",
+                "Indoor Games Room",
+                "Multipurpose Hall",
+                "Jogging Track",
+                "CCTV Surveillance",
+                "Power Backup",
+                "Rainwater Harvesting",
+                "24/7 Security"
+            ]
+        },
+
+        {
+            image: gayatri,
+            badge: "Premium Apartment",
+            title: "Gayatri Adithya – 3 BHK Apartment",
+            location: "BESANT NAGAR, CHENNAI",
+            details:{
+                type:"Apartment",
+                area:"Starts from 1390 Sqft",
+                bedrooms:"3 BHK",
+                extra:"₹29 Lakhs - ₹74 Lakhs"
+            },
+            overview:`Gayatri Adithya offers spacious 3 BHK apartments in Besant Nagar with easy access to beaches, schools and hospitals.`,
+            amenities:[
+                "Covered Car Parking",
+                "Lift Facility",
+                "CCTV Surveillance",
+                "Power Backup",
+                "Rainwater Harvesting",
+                "24/7 Security",
+                "Intercom Facility",
+                "Vaastu Compliant Design"
+                ]
+        },
+
+        {
+            image: shakti,
+            badge: "Premium Apartments",
+            title: "Sakthi Enclave – 2 & 3 BHK Apartments",
+            location: "ALWARPET, CHENNAI",
+            details:{
+                type:"Apartments",
+                area:"1010 Sqft – 2000 Sqft",
+                bedrooms:"2 & 3 BHK",
+                extra:"Prime Residential Area"
+            },
+            overview:`Sakthi Enclave offers elegantly designed apartments in Alwarpet with excellent connectivity to schools, hospitals and business hubs.`,
+            amenities:[
+                "Covered Car Parking",
+                "Lift Facility",
+                "Power Backup",
+                "CCTV Surveillance",
+                "24/7 Security",
+                "Rainwater Harvesting",
+                "Intercom Facility",
+                "Landscaped Common Areas"
+            ]
+        },
+
+        {
+            image: blue,
+            badge: "Luxury Apartment",
+            title: "Blue Wall Lahari – 3 BHK Apartment",
+            location: "NUNGAMBAKKAM, CHENNAI",
+            details:{
+                type:"Apartment",
+                area:"2020 Sqft – 2904 Sqft",
+                bedrooms:"3 BHK",
+                extra:"₹1.36 Cr Onwards"
+            },
+            overview:`Blue Wall Lahari offers luxury apartments in Nungambakkam with spacious interiors and premium lifestyle amenities.`,
+            amenities:[
+                "Covered Car Parking",
+                "Lift Facility",
+                "Power Backup",
+                "CCTV Surveillance",
+                "24/7 Security",
+                "Rainwater Harvesting",
+                "Intercom Facility",
+                "Premium Lobby & Common Areas"
+            ]
+        }
+
+        ];
+
     return(
         <>
-             {/* Header Section */}
-       <section
-         style={{
-           position: "relative",
-           backgroundImage:
-             `url(${chennaipath})`,
-           backgroundSize: "cover",
-           backgroundPosition: "center",
-           backgroundAttachment:"fixed",
-           padding: "120px 20px",
-           color: "#fff",
-           textAlign: "center"
-         }}
-       >
-         {/* Gradient Overlay */}
-         <div className='Chennai-path'
-           style={{
-             position: "absolute",
-             top: 0,
-             left: 0,
-             width: "100%",
-             height: "100%",
-             background:
-               "linear-gradient(10deg, rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.38))",
-               backgroundAttachment:"fixed",
-           }}
-         ></div>
-       
-         {/* Content */}
-         <div style={{ position: "relative", zIndex: 2 }}>
-           <h1
-             style={{
-               fontSize: "3rem",
-               color: "#fff",
-               fontWeight: "800",
-               marginBottom: "10px"
-             }}
-           > Chennai 
-           </h1>
-       
-           <p style={{ fontSize: "1.1rem",  color: "#fff",marginBottom: "20px" }}>
-             We’re Here to Help You Find Your Dream Property
-           </p>
-       
-         </div>
-       </section> 
-            <div className="villa-content">
-            <h1 className="section-title">
-            <h1>Properties in Chennai</h1> 
-            </h1>
 
-            <p className="section-subtitle">
-                Experience thoughtfully designed homes crafted for modern lifestyles.
-            </p>
-            </div>
+        {/* Header Section */}
 
-             <section className="villa-section">
-            <div className="villa-container">
+        <section
+        style={{
+        position:"relative",
+        backgroundImage:`url(${chennaipath})`,
+        backgroundSize:"cover",
+        backgroundPosition:"center",
+        backgroundAttachment:"fixed",
+        padding:"120px 20px",
+        color:"#fff",
+        textAlign:"center"
+        }}
+        >
 
-                {/* Left Image */}
-                <div className="villa-image">
-                <img src={radiance}alt="Radiance Suprema" />
-                <div className="villa-badge">Luxury Apartments</div>
-                </div>
+            <div
+            className="Chennai-path"
+            style={{
+            position:"absolute",
+            top:0,
+            left:0,
+            width:"100%",
+            height:"100%",
+            background:"linear-gradient(10deg, rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.28))"
+            }}
+            ></div>
+                <div style={{position:"relative",zIndex:2}}>
+                <h1 style={{fontSize:"3rem",fontWeight:"800" , color:"white"}}>Chennai</h1>
 
-                {/* Right Content */}
-                <div className="villa-content">
-
-                <h2>Radiance Suprema – 2, 3 & 4 BHK Luxury Apartments</h2>
-                <h4 className="location">MADHAVARAM, CHENNAI</h4>
-                <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
-
-                <div className="villa-details">
-
-                    <div><strong>Project Type:</strong> Apartments</div>
-                    <div><strong>Property Area:</strong> 992 - 1422 Sqft</div>
-                    <div><strong>BedRooms:</strong> 2, 3 and 4</div>
-                    <div><strong>Floors:</strong> High-Rise Towers</div>
-
-                </div>
-
-                <div className="overview">
-                    <h5>Project Overview</h5>
-                    <p>
-                    Starting from ₹95 Lakhs onwards. Radiance Suprema is a premium residential 
-                    development offering spacious 2, 3 & 4 BHK luxury apartments in Madhavaram, Chennai.
-                    Designed with contemporary architecture and superior specifications,
-                    the project offers a refined urban lifestyle.
-                    Strategically located with excellent connectivity to Anna Nagar, 
-                    Kolathur and key commercial hubs.
-                    Homes are Vaastu compliant and designed for maximum ventilation 
-                    with thoughtfully planned living spaces.
-                    The project features expansive landscaped areas and modern lifestyle amenities.
-                    </p>
-                </div>
-
-                <div className="amenities">
-                    <h5>Amenities</h5>
-                    <ul>
-                    <li><i class="fa-solid fa-house"></i>Grand Clubhouse</li>
-                    <li><i class="fa-solid fa-house"></i>Swimming Pool</li>
-                    <li><i class="fa-solid fa-house"></i>Fully Equipped Gym</li>
-                    <li><i class="fa-solid fa-house"></i>Multipurpose Hall</li>
-                    <li><i class="fa-solid fa-house"></i>Indoor Games Room</li>
-                    <li><i class="fa-solid fa-house"></i>Children’s Play Area</li>
-                    <li><i class="fa-solid fa-house"></i>Landscaped Gardens</li>
-                    <li><i class="fa-solid fa-house"></i>Jogging Track</li>
-                    <li><i class="fa-solid fa-house"></i>CCTV Surveillance</li>
-                    <li><i class="fa-solid fa-house"></i>Power Backup</li>
-                    <li><i class="fa-solid fa-house"></i>Rainwater Harvesting</li>
-                    <li><i class="fa-solid fa-house"></i>24/7 Security</li>
-                    </ul>
-                </div>
-
-                </div>
-            </div>
-            </section>
-
-
-
-          <section className="villa-section">
-            <div className="villa-container">
-
-                {/* Left Image */}
-                <div className="villa-image">
-                <img src={RadiaRecidencia} alt="Radiance Residencia" />
-                <div className="villa-badge">Premium Plots</div>
-                </div>
-
-                {/* Right Content */}
-                <div className="villa-content">
-
-                <h2>Radiance Residencia – Premium Residential Plots</h2>
-                <h4 className="location">THAIYUR, OMR</h4>
-                <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
-
-                <div className="villa-details">
-
-                    <div><strong>Project Type:</strong> Plots</div>
-                    <div><strong>Property Area:</strong> 982 - 2956 SqFt</div>
-                    <div><strong>Price Range:</strong> ₹ 55 Lakhs - 83 Lakhs</div>
-                    <div><strong>Location:</strong> Thaiyur, OMR</div>
-
-                </div>
-
-                <div className="overview">
-                    <h5>Project Overview</h5>
-                    <p>
-                    Radiance Residencia offers premium residential plots located in Thaiyur on OMR,
-                    one of the fastest growing residential corridors in Chennai.
-                    The project provides well-planned plots ranging from 982 to 2956 SqFt,
-                    ideal for building your dream home in a peaceful and well-connected area.
-                    With easy access to IT hubs, educational institutions and daily conveniences,
-                    Radiance Residencia is a perfect investment for future living.
-                    </p>
-                </div>
-
-                <div className="amenities">
-                    <h5>Amenities</h5>
-                    <ul>
-                    <li><i class="fa-solid fa-house"></i>Gated Community</li>
-                    <li><i class="fa-solid fa-house"></i>Blacktop Roads</li>
-                    <li><i class="fa-solid fa-house"></i>Street Lighting</li>
-                    <li><i class="fa-solid fa-house"></i>Children’s Play Area</li>
-                    <li><i class="fa-solid fa-house"></i>Landscaped Parks</li>
-                    <li><i class="fa-solid fa-house"></i>24/7 Security</li>
-                    <li><i class="fa-solid fa-house"></i>Drainage System</li>
-                    <li><i class="fa-solid fa-house"></i>Water Supply</li>
-                    </ul>
-                </div>
-
-                </div>
+                <p style={{fontSize:"1.1rem",marginBottom:"20px", color:"white"}}>
+                We’re Here to Help You Find Your Dream Property
+                </p>
             </div>
         </section>
 
 
-            <section className="villa-section">
+        <div className="villa-content">
+            <h1 className="section-title">Properties in Chennai</h1>
+            <p className="section-subtitle">
+            Experience thoughtfully designed homes crafted for modern lifestyles.
+            </p>
+        </div>
+
+
+        {/* Property Loop */}
+        {properties.map((property,index)=>(
+        <section className="villa-section" key={index}>
+
             <div className="villa-container">
 
-                {/* Left Image */}
-                <div className="villa-image">
-                <img src={utopia} alt="Casagrand Utopia View 2" />
-                <div className="villa-badge">Premium Apartments</div>
-                </div>
+            <div className="villa-image">
+            <img src={property.image} alt={property.title}/>
+            <div className="villa-badge">{property.badge}</div>
+            </div>
 
-                {/* Right Content */}
-                <div className="villa-content">
+            <div className="villa-content">
 
-                <h2>Casagrand Utopia – 2 & 3 BHK Premium Apartments</h2>
-                <h4 className="location">MANAPAKKAM, CHENNAI</h4>
-                <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
+            <h2>{property.title}</h2>
+            <h4 className="location">{property.location}</h4>
+
+            <a href="tel:+919444386103" className="contact-btn">
+            Contact Now
+            </a>
 
             <div className="villa-details">
 
-                    <div><strong>Project Type:</strong> Apartments</div>
-                    <div><strong>Property Area:</strong> 1100 - 1800 Sqft</div>
-                    <div><strong>BedRooms:</strong> 2 and 3</div>
-                    <div><strong>Floors:</strong> Stilt + 5 Floors</div>
-
-                </div>
-
-                <div className="overview">
-                    <h5>Project Overview</h5>
-                    <p>
-                    Starting from ₹85 Lakhs onwards. Casagrand Utopia offers thoughtfully designed 
-                    2 & 3 BHK premium apartments in the heart of Manapakkam, Chennai.
-                    Strategically located near DLF IT Park and Porur, this project ensures 
-                    seamless connectivity to major IT hubs, schools, hospitals and shopping centers.
-                    Designed with modern architecture, superior ventilation and zero space wastage concept.
-                    The project offers lifestyle amenities crafted for comfortable urban living.
-                    Vaastu compliant homes with high-end specifications and contemporary finishes.
-                    </p>
-                </div>
-
-                <div className="amenities">
-                    <h5><b>Amenities</b></h5>
-                    <ul>
-                    <li><i class="fa-solid fa-house"></i>Landscaped Garden</li>
-                    <li><i class="fa-solid fa-house"></i>Clubhouse</li>
-                    <li><i class="fa-solid fa-house"></i>Swimming Pool</li>
-                    <li><i class="fa-solid fa-house"></i>Fully Equipped Gym</li>
-                    <li><i class="fa-solid fa-house"></i>Children’s Play Area</li>
-                    <li><i class="fa-solid fa-house"></i>Indoor Games Room</li>
-                    <li><i class="fa-solid fa-house"></i>Multipurpose Hall</li>
-                    <li><i class="fa-solid fa-house"></i>Jogging Track</li>
-                    <li><i class="fa-solid fa-house"></i>CCTV Surveillance</li>
-                    <li><i class="fa-solid fa-house"></i>Power Backup</li>
-                    <li><i class="fa-solid fa-house"></i>Rainwater Harvesting</li>
-                    <li><i class="fa-solid fa-house"></i>24/7 Security</li>
-                    </ul>
-                </div>
-
-                </div>
+            <div>
+                <strong>Project Type:</strong> {property.details.type}
             </div>
-            </section>
-           
-            <section className="villa-section">
-            <div className="villa-container">
 
-                {/* Left Image */}
-                <div className="villa-image">
-                <img src={gayatri} alt="Gayatri Adithya" />
-                <div className="villa-badge">Premium Apartment</div>
-                </div>
-
-                {/* Right Content */}
-                <div className="villa-content">
-
-                <h2>Gayatri Adithya – 3 BHK Apartment</h2>
-                <h4 className="location">BESANT NAGAR, CHENNAI</h4>
-                <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
-
-                <div className="villa-details">
-
-                    <div><strong>Project Type:</strong> Apartment</div>
-                    <div><strong>Price Range:</strong> ₹29 Lakhs - ₹74 Lakhs</div>
-                    <div><strong>BedRooms:</strong> 3 BHK</div>
-                    <div><strong>Property Area:</strong> Starts from 1390 Sqft</div>
-
-                </div>
-
-                <div className="overview">
-                    <h5>Project Overview</h5>
-                    <p>
-                    Gayatri Adithya offers thoughtfully designed 3 BHK apartments 
-                    located in the prime residential locality of Besant Nagar, Chennai.
-                    With prices starting from ₹29 Lakhs up to ₹74 Lakhs,
-                    this project combines comfort, connectivity and modern lifestyle living.
-                    Spacious interiors starting from 1390 Sqft ensure ample ventilation
-                    and efficient space utilization. Close proximity to beaches, schools,
-                    hospitals and commercial hubs makes it an ideal choice for families.
-                    </p>
-                </div>
-
-                <div className="amenities">
-                    <h5>Amenities</h5>
-                    <ul>
-                    <li><i class="fa-solid fa-house"></i>Covered Car Parking</li>
-                    <li><i class="fa-solid fa-house"></i>Lift Facility</li>
-                    <li><i class="fa-solid fa-house"></i>CCTV Surveillance</li>
-                    <li><i class="fa-solid fa-house"></i>Power Backup</li>
-                    <li><i class="fa-solid fa-house"></i>Rainwater Harvesting</li>
-                    <li><i class="fa-solid fa-house"></i>24/7 Security</li>
-                    <li><i class="fa-solid fa-house"></i>Intercom Facility</li>
-                    <li><i class="fa-solid fa-house"></i>Vaastu Compliant Design</li>
-                    </ul>
-                </div>
-
-                </div>
+            <div>
+                <strong>Property Area:</strong> {property.details.area}
             </div>
-            </section><section className="villa-section">
-            <div className="villa-container">
 
-                {/* Left Image */}
-                <div className="villa-image">
-                <img src={shakti} alt="Sakthi Enclave" />
-                <div className="villa-badge">Premium Apartments</div>
-                </div>
-
-                {/* Right Content */}
-                <div className="villa-content">
-
-                <h2>Sakthi Enclave – 2 & 3 BHK Apartments</h2>
-                <h4 className="location">ALWARPET, CHENNAI</h4>
-                <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
-
-                <div className="villa-details">
-
-                    <div><strong>Project Type:</strong> Apartments</div>
-                    <div><strong>Property Area:</strong> 1010 Sqft – 2000 Sqft</div>
-                    <div><strong>BedRooms:</strong> 2 & 3 BHK</div>
-                    <div><strong>Location:</strong> Prime Residential Area</div>
-
-                </div>
-
-                <div className="overview">
-                    <h5>Project Overview</h5>
-                    <p>
-                    Sakthi Enclave offers elegantly designed 2 & 3 BHK apartments 
-                    in the premium locality of Alwarpet, Chennai.
-                    With unit sizes ranging from 1010 Sqft to 2000 Sqft,
-                    the project ensures spacious living with excellent ventilation 
-                    and modern architectural design.
-                    Located in one of Chennai’s most sought-after neighborhoods,
-                    residents enjoy close proximity to top schools, hospitals,
-                    shopping destinations and business hubs.
-                    Ideal for families seeking comfort, connectivity and a refined lifestyle.
-                    </p>
-                </div>
-
-                <div className="amenities">
-                    <h5>Amenities</h5>
-                    <ul>
-                    <li><i class="fa-solid fa-house"></i>Covered Car Parking</li>
-                    <li><i class="fa-solid fa-house"></i>Lift Facility</li>
-                    <li><i class="fa-solid fa-house"></i>Power Backup</li>
-                    <li><i class="fa-solid fa-house"></i>CCTV Surveillance</li>
-                    <li><i class="fa-solid fa-house"></i>24/7 Security</li>
-                    <li><i class="fa-solid fa-house"></i>Rainwater Harvesting</li>
-                    <li><i class="fa-solid fa-house"></i>Intercom Facility</li>
-                    <li><i class="fa-solid fa-house"></i>Landscaped Common Areas</li>
-                    </ul>
-                </div>
-
-                </div>
+            <div>
+                <strong>BedRooms:</strong> {property.details.bedrooms}
             </div>
-            </section>
 
-            <section className="villa-section">
-            <div className="villa-container">
-
-                {/* Left Image */}
-                <div className="villa-image">
-                <img src={blue} alt="Blue Wall Lahari" />
-                <div className="villa-badge">Luxury Apartment</div>
-                </div>
-
-                {/* Right Content */}
-                <div className="villa-content">
-
-                <h2>Blue Wall Lahari – 3 BHK Apartment</h2>
-                <h4 className="location">NUNGAMBAKKAM, CHENNAI</h4>
-                <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
-                                            
-                <div className="villa-details">
-
-                    <div><strong>Project Type:</strong> Apartment</div>
-                    <div><strong>Price Range:</strong> ₹1.36 Cr Onwards</div>
-                    <div><strong>BedRooms:</strong> 3 BHK</div>
-                    <div><strong>Property Area:</strong> 2020 Sqft – 2904 Sqft</div>
-
-                </div>
-
-                <div className="overview">
-                    <h5>Project Overview</h5>
-                    <p>
-                    Blue Wall Lahari offers premium 3 BHK luxury apartments
-                    in the upscale locality of Nungambakkam, Chennai.
-                    With unit sizes ranging from 2020 Sqft to 2904 Sqft,
-                    the project provides expansive living spaces designed
-                    for elegance and comfort.
-                    Starting from ₹1.36 Cr onwards, these residences feature
-                    contemporary architecture, superior specifications and
-                    thoughtfully planned interiors.
-                    Located in the heart of the city with excellent connectivity
-                    to schools, hospitals, commercial hubs and entertainment zones.
-                    </p>
-                </div>
-
-                <div className="amenities">
-                    <h5>Amenities</h5>
-                    <ul>
-                    <li><i class="fa-solid fa-house"></i>Covered Car Parking</li>
-                    <li><i class="fa-solid fa-house"></i>Lift Facility</li>
-                    <li><i class="fa-solid fa-house"></i>Power Backup</li>
-                    <li><i class="fa-solid fa-house"></i>CCTV Surveillance</li>
-                    <li><i class="fa-solid fa-house"></i>24/7 Security</li>
-                    <li><i class="fa-solid fa-house"></i>Rainwater Harvesting</li>
-                    <li><i class="fa-solid fa-house"></i>Intercom Facility</li>
-                    <li><i class="fa-solid fa-house"></i>Premium Lobby & Common Areas</li>
-                    </ul>
-                </div>
-
-                </div>
+            <div>
+                <strong>Details:</strong> {property.details.extra}
             </div>
-            </section>
-        
-             
-             <Cta/>
+            </div>
+
+            <div className="overview">
+
+                <h5>Project Overview</h5>
+                <p>{property.overview}</p>
+
+            </div>
+
+            <div className="amenities">
+
+            <h5>Amenities</h5>
+
+            <ul>
+            {property.amenities.map((amenity,i)=>(
+                <li key={i}>
+                <i className="fa-solid fa-house"></i> {amenity}
+                </li>
+                ))}
+            </ul>
+
+            </div>
+            </div>
+            </div>
+
+        </section>
+        ))}
+
+
+        <Cta/>
+
         </>
-    );
+        );
 }
 
 export default Chennai

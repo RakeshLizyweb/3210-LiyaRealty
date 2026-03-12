@@ -18,648 +18,378 @@ import tvhSerenity from "../images/images-1/tvhserenity.jpg";
 import Cta from '../sections/Cta';
 
 function Coimbatore(){
-    return(
-        <>
-                     {/* Header Section */}
-               <section
-                 style={{
-                   position: "relative",
-                   backgroundImage:
-                     `url(${coimbatorepath})`,
-                    backgroundAttachment:"fixed",
-                   backgroundSize: "cover",
-                   backgroundPosition: "center",
-                   padding: "120px 20px",
-                   color: "#fff",
-                   textAlign: "center"
-                 }}
-               >
-                 {/* Gradient Overlay */}
-                 <div className='Chennai-path'
-                   style={{
-                     position: "absolute",
-                     top: 0,
-                     left: 0,
-                     width: "100%",
-                     height: "100%",
-                     background:
-                       "linear-gradient(10deg, rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.38))",
-                       backgroundAttachment:"fixed",
-                   }}
-                 ></div>
-               
-                 {/* Content */}
-                 <div style={{ position: "relative", zIndex: 2 }}>
-                   <h1
-                     style={{
-                       fontSize: "3rem",
-                       color: "#fff",
-                       fontWeight: "800",
-                       marginBottom: "10px"
-                     }}
-                   >Coimbatore 
-                   </h1>
-               
-                   <p style={{ fontSize: "1.1rem",  color: "#fff",marginBottom: "20px" }}>
-                     We’re Here to Help You Find Your Dream Property
-                   </p>
-               
-                 </div>
-               </section> 
+const properties = [
+      {
+        image: tvhSerenity,
+        badge: "Premium 2 BHK Flats",
+        title: "TVH Serenity – Premium 2 BHK Flats",
+        location: "AVINASHI, COIMBATORE",
+        details: {
+          type: "Residential Apartments",
+          size: "2 BHK – 868 – 1055 Sqft",
+          place: "Avinashi",
+          price: "₹ 56.5 Lakhs Onwards"
+        },
+        overview:
+          "TVH Serenity offers thoughtfully designed 2 BHK apartments in Avinashi, Coimbatore with spacious layouts and modern living spaces.",
+        amenities: [
+          "Gated Community",
+          "24/7 Security",
+          "Covered Car Parking",
+          "Power Backup",
+          "Lift Facility",
+          "Children’s Play Area",
+          "Landscaped Garden",
+          "CCTV Surveillance"
+        ]
+      },
+
+      {
+        image: tvhcrest,
+        badge: "1 & 2 BHK Apartments",
+        title: "TVH Crest – Premium 1 & 2 BHK Apartments",
+        location: "AVINASHI, COIMBATORE",
+        details: {
+          type: "Residential Apartments",
+          size: "1 BHK – 784 SqFt | 2 BHK – 1038 – 1154 SqFt",
+          place: "Avinashi",
+          price: "1 BHK – ₹52.53 Lakhs | 2 BHK – ₹69.53 Lakhs"
+        },
+        overview:
+          "TVH Crest offers modern 1 and 2 BHK apartments designed for comfortable urban living in Avinashi, Coimbatore.",
+        amenities: [
+          "Gated Community",
+          "24/7 Security",
+          "Covered Car Parking",
+          "Lift Facility",
+          "Power Backup",
+          "Children’s Play Area",
+          "Landscaped Garden",
+          "CCTV Surveillance"
+        ]
+      },
+
+      {
+        image: ghats,
+        badge: "Residential Plots",
+        title: "G Square Western Ghats – Premium Residential Plots",
+        location: "PALANTHURAI ROAD, COIMBATORE",
+        details: {
+          type: "Residential Plots",
+          size: "3 - 4 Cents",
+          place: "Palanthurai Road",
+          price: "DTCP Approved"
+        },
+        overview:
+          "G Square Western Ghats offers premium residential plots in a peaceful environment with excellent connectivity.",
+        amenities: [
+          "Blacktop Internal Roads",
+          "Street Lighting",
+          "24/7 Security",
+          "Gated Community",
+          "Rainwater Harvesting",
+          "Children’s Play Area"
+        ]
+      },
+
+      {
+        image: blossom,
+        badge: "Residential Plots",
+        title: "G Square Blossom – Premium Residential Plots",
+        location: "AVINASHI, COIMBATORE",
+        details: {
+          type: "Residential Plots",
+          size: "3 - 4 Cents",
+          place: "Avinashi",
+          price: "₹19.50 Lakhs Onwards"
+        },
+        overview:
+          "G Square Blossom offers well-planned residential plots in Avinashi with DTCP approval and excellent connectivity.",
+        amenities: [
+          "Gated Community",
+          "Street Lights",
+          "Blacktop Roads",
+          "Water Line Provision",
+          "Rainwater Harvesting",
+          "Children’s Play Area"
+        ]
+      },
+
+      {
+        image: pride,
+        badge: "Residential Plots",
+        title: "G Square Pride TVS Nagar – Premium Residential Plots",
+        location: "EDAYARPALAYAM, COIMBATORE",
+        details: {
+          type: "Residential Plots",
+          size: "3 - 6 Cents",
+          place: "Edayarpalayam",
+          price: "₹30 Lakhs Onwards"
+        },
+        overview:
+          "G Square Pride offers DTCP approved residential plots in a fast growing locality of Coimbatore.",
+        amenities: [
+          "Gated Community",
+          "Blacktop Roads",
+          "Street Lighting",
+          "24/7 Security",
+          "Children’s Play Area",
+          "Rainwater Harvesting"
+        ]
+      },
+
+      {
+        image: city,
+        badge: "Residential Plots",
+        title: "G Square City – Premium Residential Plots",
+        location: "L&T BYPASS, COIMBATORE",
+        details: {
+          type: "Residential Plots",
+          size: "3 - 4 Cents",
+          place: "L&T Bypass",
+          price: "₹57 Lakhs Onwards"
+        },
+        overview:
+          "G Square City offers strategically located residential plots along L&T Bypass with excellent future value.",
+        amenities: [
+          "Gated Community",
+          "Street Lighting",
+          "Blacktop Roads",
+          "Drainage System",
+          "Children’s Play Area",
+          "Green Open Spaces"
+        ]
+      },
+
+      {
+        image: radiance,
+        badge: "Luxury Villas",
+        title: "Radiance Splendour – 3 & 4 BHK Luxury Villas",
+        location: "VEDAPATTI, COIMBATORE",
+        details: {
+          type: "Villa",
+          size: "3 & 4 BHK",
+          place: "Vedapatti",
+          price: "₹36 Lakhs Onwards"
+        },
+        overview:
+          "Radiance Splendour offers spacious luxury villas designed with modern architecture in Vedapatti.",
+        amenities: [
+          "Clubhouse",
+          "Gym",
+          "Children’s Play Area",
+          "Multipurpose Hall",
+          "24/7 Security",
+          "Power Backup"
+        ]
+      },
+
+      {
+        image: cosmos,
+        badge: "Premium Apartments",
+        title: "Casagrand Cosmos – 2 & 3 BHK Apartments",
+        location: "VISWANATHAPURAM, COIMBATORE",
+        details: {
+          type: "Apartment",
+          size: "625 SqFt - 1650 SqFt",
+          place: "Viswanathapuram",
+          price: "₹29 Lakhs - ₹89 Lakhs"
+        },
+        overview:
+          "Casagrand Cosmos offers modern apartments with premium amenities and excellent connectivity.",
+        amenities: [
+          "Clubhouse",
+          "Swimming Pool",
+          "Gym",
+          "Children’s Play Area",
+          "Indoor Games",
+          "24/7 Security"
+        ]
+      },
+
+      {
+        image: kosmos,
+        badge: "Luxury Villas",
+        title: "Casagrand Cosmos – 3 & 4 BHK Villas",
+        location: "VISWANATHAPURAM, COIMBATORE",
+        details: {
+          type: "Villa",
+          size: "2500 SqFt - 3441 SqFt",
+          place: "Viswanathapuram",
+          price: "₹33 Lakhs Onwards"
+        },
+        overview:
+          "Casagrand Cosmos Villas provide spacious premium villas with modern lifestyle amenities.",
+        amenities: [
+          "Private Garden",
+          "Clubhouse",
+          "Gym",
+          "Multipurpose Hall",
+          "Children’s Play Area",
+          "24/7 Security"
+        ]
+      },
+
+      {
+        image: prozone,
+        badge: "Premium Apartments",
+        title: "Prozone Palms – 1, 2 & 3 BHK Apartments",
+        location: "SARAVANAMPATTI, COIMBATORE",
+        details: {
+          type: "Apartment",
+          size: "721 SqFt - 1753 SqFt",
+          place: "Saravanampatti",
+          price: "₹1.47 Cr Onwards"
+        },
+        overview:
+          "Prozone Palms offers premium apartments located near major IT hubs in Saravanampatti.",
+        amenities: [
+          "Clubhouse",
+          "Swimming Pool",
+          "Gym",
+          "Landscaped Garden",
+          "Children’s Play Area",
+          "24/7 Security"
+        ]
+      }
+
+      ];
 
 
-            <div className="villa-content">
-              <h1 className="section-title">
-              <h1>Properties in Coimbatore</h1> 
-              </h1>
-
-              <p className="section-subtitle">
-                Experience thoughtfully designed homes crafted for modern lifestyles.
-              </p>
-            </div>
 
 
+    return (
+    <>
 
-            <section className="villa-section">
-              <div className="villa-container">
+    {/* Header */}
 
-                {/* Left Image */}
-                <div className="villa-image">
-                  <img src={tvhSerenity} alt="TVH Serenity" />
-                  <div className="villa-badge">Premium 2 BHK Flats</div>
-                </div>
+    <section
+    style={{
+    position: "relative",
+    backgroundImage: `url(${coimbatorepath})`,
+    backgroundAttachment: "fixed",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    padding: "120px 20px",
+    color: "#fff",
+    textAlign: "center"
+    }}
+    >
 
-                {/* Right Content */}
-                <div className="villa-content">
+      <div
+      style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      background: "linear-gradient(10deg, rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.13))"
+      }}
+      ></div>
 
-                  <h2>TVH Serenity – Premium 2 BHK Flats</h2>
-                  <h4 className="location">AVINASHI, COIMBATORE</h4>
-                  <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
+        <div style={{ position: "relative", zIndex: 2 }}>
+        <h1 style={{ fontSize: "3rem", fontWeight: "800", color:"white"}}>Coimbatore</h1>
 
-                  <div className="villa-details">
+        <p className='text-white'>We’re Here to Help You Find Your Dream Property</p>
 
-                    <div><strong>Project Type:</strong> Residential Apartments</div>
-                    <div><strong>Flat Size:</strong> 2 BHK – 868 – 1055 Sqft</div>
-                    <div><strong>Location:</strong> Avinashi</div>
-                    <div><strong>Price:</strong> ₹ 56.5 Lakhs Onwards</div>
+      </div>
 
-                  </div>
+    </section>
 
-                  <div className="overview">
-                    <h5>Project Overview</h5>
-                    <p>
-                      TVH Serenity offers thoughtfully designed 2 BHK apartments in Avinashi, Coimbatore.
-                      The project is crafted to provide comfortable and modern living spaces for families.
-                      With spacious layouts ranging from 868 to 1055 Sqft, residents can enjoy a perfect
-                      balance of lifestyle and convenience. Located in a rapidly developing area, the
-                      property offers easy connectivity to key locations, educational institutions,
-                      healthcare centers and commercial hubs.
-                    </p>
-                  </div>
+    <div className="villa-content">
+        <h1 className="section-title">Properties in Coimbatore</h1>
 
-                  <div className="amenities">
-                    <h5>Amenities</h5>
-                    <ul>
-                      <li><i class="fa-solid fa-house"/> Gated Community</li>
-                      <li><i class="fa-solid fa-house"/> 24/7 Security</li>
-                      <li><i class="fa-solid fa-house"/> Covered Car Parking</li>
-                      <li><i class="fa-solid fa-house"/> Power Backup</li>
-                      <li><i class="fa-solid fa-house"/> Lift Facility</li>
-                      <li><i class="fa-solid fa-house"/> Children’s Play Area</li>
-                      <li><i class="fa-solid fa-house"/> Landscaped Garden</li>
-                      <li><i class="fa-solid fa-house"/> CCTV Surveillance</li>
-                    </ul>
-                  </div>
+        <p className="section-subtitle">
+        Experience thoughtfully designed homes crafted for modern lifestyles.
+        </p>
+    </div>
 
-                </div>
-              </div>
-            </section>
+    {/* PROPERTY LOOP */}
 
+    {properties.map((property, index) => (
 
+    <section className="villa-section" key={index}>
 
-
-            <section className="villa-section">
-              <div className="villa-container">
-
-                {/* Left Image */}
-                <div className="villa-image">
-                  <img src={tvhcrest} alt="TVH Crest" />
-                  <div className="villa-badge">1 & 2 BHK Apartments</div>
-                </div>
-
-                {/* Right Content */}
-                <div className="villa-content">
-
-                  <h2>TVH Crest – Premium 1 & 2 BHK Apartments</h2>
-                  <h4 className="location">AVINASHI, COIMBATORE</h4>
-                  <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
-
-                  <div className="villa-details">
-
-                    <div><strong>Project Type:</strong> Residential Apartments</div>
-                    <div><strong>Flat Size:</strong> 1 BHK – 784 SqFt | 2 BHK – 1038 – 1154 SqFt</div>
-                    <div><strong>Location:</strong> Avinashi</div>
-                    <div><strong>Price:</strong> 1 BHK – ₹52.53 Lakhs | 2 BHK – ₹69.53 Lakhs</div>
-
-                  </div>
-
-                  <div className="overview">
-                    <h5>Project Overview</h5>
-                    <p>
-                      TVH Crest is a modern residential project located in Avinashi, Coimbatore,
-                      offering well-designed 1 and 2 BHK apartments. The project features
-                      spacious homes with efficient layouts that maximize comfort and functionality.
-                      With sizes ranging from 784 SqFt to 1154 SqFt, it provides ideal living
-                      spaces for individuals and families. The project enjoys excellent
-                      connectivity to major roads, workplaces, schools and lifestyle destinations.
-                    </p>
-                  </div>
-
-                  <div className="amenities">
-                    <h5>Amenities</h5>
-                    <ul>
-                      <li><i class="fa-solid fa-house"/> Gated Community</li>
-                      <li><i class="fa-solid fa-house"/> 24/7 Security</li>
-                      <li><i class="fa-solid fa-house"/> Covered Car Parking</li>
-                      <li><i class="fa-solid fa-house"/> Lift Facility</li>
-                      <li><i class="fa-solid fa-house"/> Power Backup</li>
-                      <li><i class="fa-solid fa-house"/> Children’s Play Area</li>
-                      <li><i class="fa-solid fa-house"/> Landscaped Garden</li>
-                      <li><i class="fa-solid fa-house"/> CCTV Surveillance</li>
-                    </ul>
-                  </div>
-
-                </div>
-              </div>
-            </section>
-
-
-               
-        <section className="villa-section">
-          <div className="villa-container">
-
-            {/* Left Image */}
-            <div className="villa-image">
-              <img src={ghats} alt="G Square Western Ghats" />
-              <div className="villa-badge">Residential Plots</div>
-            </div>
-
-            {/* Right Content */}
-            <div className="villa-content">
-
-              <h2>G Square Western Ghats – Premium Residential Plots</h2>
-              <h4 className="location">PALANTHURAI ROAD, COIMBATORE</h4>
-              <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
-
-              <div className="villa-details">
-
-                <div><strong>Project Type:</strong> Residential Plots</div>
-                <div><strong>Plot Size:</strong> 3 - 4 Cents</div>
-                <div><strong>Location:</strong> Palanthurai Road</div>
-                <div><strong>Approval:</strong> DTCP Approved</div>
-
-              </div>
-
-              <div className="overview">
-                <h5>Project Overview</h5>
-                <p>
-                  G Square Western Ghats offers premium residential plots 
-                  located on Palanthurai Road, Coimbatore.
-                  Designed for peaceful living amidst nature, the project 
-                  provides well-planned plots ranging from 3 to 4 cents.
-                  With clear titles and DTCP approval, it is ideal for 
-                  building your dream home in a serene and fast-developing area.
-                  Excellent connectivity to major schools, colleges, 
-                  hospitals and commercial hubs ensures convenience and value appreciation.
-                </p>
-              </div>
-
-              <div className="amenities">
-                <h5>Amenities</h5>
-                <ul>
-                  <li><i class="fa-solid fa-house"/>Blacktop Internal Roads</li>
-                  <li><i class="fa-solid fa-house"/>Street Lighting</li>
-                  <li><i class="fa-solid fa-house"/>24/7 Security</li>
-                  <li><i class="fa-solid fa-house"/>Gated Community</li>
-                  <li><i class="fa-solid fa-house"/>Landscaped Entrance Arch</li>
-                  <li><i class="fa-solid fa-house"/>Clear Title Property</li>
-                  <li><i class="fa-solid fa-house"/>Water Connection Provision</li>
-                  <li><i class="fa-solid fa-house"/>Drainage System</li>
-                  <li><i class="fa-solid fa-house"/>Rainwater Harvesting</li>
-                  <li><i class="fa-solid fa-house"/>Tree-Lined Avenues</li>
-                  <li><i class="fa-solid fa-house"/>Children’s Play Area</li>
-                  <li><i class="fa-solid fa-house"/>Green Open Spaces</li>
-                </ul>
-              </div>
-
-            </div>
-          </div>
-        </section>
-
-        <section className="villa-section">
-          <div className="villa-container">
-
-            {/* Left Image */}
-            <div className="villa-image">
-              <img src={blossom} alt="G Square Blossom" />
-              <div className="villa-badge">Residential Plots</div>
-            </div>
-
-            {/* Right Content */}
-            <div className="villa-content">
-
-              <h2>G Square Blossom – Premium Residential Plots</h2>
-              <h4 className="location">AVINASHI, COIMBATORE</h4>
-              <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
-
-              <div className="villa-details">
-
-                <div><strong>Project Type:</strong> Residential Plots</div>
-                <div><strong>Price Range:</strong> ₹19.50 Lakhs Onwards</div>
-                <div><strong>Plot Size:</strong> 3 - 4 Cents</div>
-                <div><strong>Approval:</strong> DTCP Approved</div>
-
-              </div>
-
-              <div className="overview">
-                <h5>Project Overview</h5>
-                <p>
-                  G Square Blossom offers premium residential plots in Avinashi, Coimbatore,
-                  starting from ₹19.50 Lakhs onwards. The project features well-planned
-                  3 to 4 cents plots within a secure gated community.
-                  Located in a rapidly developing area, it provides excellent connectivity
-                  to Avinashi Road, educational institutions, hospitals and commercial hubs.
-                  With clear title and DTCP approval, it is an ideal investment opportunity
-                  and perfect for building your dream home.
-                </p>
-              </div>
-
-              <div className="amenities">
-                <h5>Amenities</h5>
-                <ul>
-                  <li><i class="fa-solid fa-house"/>Gated Community</li>
-                  <li><i class="fa-solid fa-house"/>Blacktop Internal Roads</li>
-                  <li><i class="fa-solid fa-house"/>Street Lights</li>
-                  <li><i class="fa-solid fa-house"/>24/7 Security</li>
-                  <li><i class="fa-solid fa-house"/>Landscaped Entrance</li>
-                  <li><i class="fa-solid fa-house"/>Water Line Provision</li>
-                  <li><i class="fa-solid fa-house"/>Drainage System</li>
-                  <li><i class="fa-solid fa-house"/>Rainwater Harvesting</li>
-                  <li><i class="fa-solid fa-house"/>Children’s Play Area</li>
-                  <li><i class="fa-solid fa-house"/>Green Open Spaces</li>
-                  <li><i class="fa-solid fa-house"/>Clear Title Property</li>
-                  <li><i class="fa-solid fa-house"/>DTCP Approved Layout</li>
-                </ul>
-              </div>
-
-            </div>
-          </div>
-        </section>
-
-        <section className="villa-section">
         <div className="villa-container">
 
-            {/* Left Image */}
-            <div className="villa-image">
-            <img src={pride}alt="G Square Pride TVS Nagar" />
-            <div className="villa-badge">Residential Plots</div>
-            </div>
+        <div className="villa-image">
 
-            {/* Right Content */}
-            <div className="villa-content">
+        <img src={property.image} alt={property.title} />
 
-            <h2>G Square Pride TVS Nagar – Premium Residential Plots</h2>
-            <h4 className="location">EDAYARPALAYAM, COIMBATORE</h4>
-            <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
+        <div className="villa-badge">{property.badge}</div>
 
-            <div className="villa-details">
-
-                <div><strong>Project Type:</strong> Residential Plots</div>
-                <div><strong>Price Range:</strong> ₹30 Lakhs Onwards</div>
-                <div><strong>Plot Size:</strong> 3 - 6 Cents</div>
-                <div><strong>Approval:</strong> DTCP Approved</div>
-
-            </div>
-
-            <div className="overview">
-                <h5>Project Overview</h5>
-                <p>
-                G Square Pride TVS Nagar offers premium residential plots in 
-                Edayarpalayam, Coimbatore, starting from ₹30 Lakhs onwards.
-                The project features well-developed 3 to 6 cents plots within 
-                a secure gated community environment.
-                Located in a prime and fast-growing residential area,
-                it provides excellent connectivity to major schools,
-                colleges, hospitals and shopping centers.
-                With clear title and DTCP approval, it is ideal for both
-                investment and building your dream home.
-                </p>
-            </div>
-
-            <div className="amenities">
-                <h5>Amenities</h5>
-                <ul>
-                <li><i class="fa-solid fa-house"/>Gated Community</li>
-                <li><i class="fa-solid fa-house"/>Blacktop Internal Roads</li>
-                <li><i class="fa-solid fa-house"/>Street Lighting</li>
-                <li><i class="fa-solid fa-house"/>24/7 Security</li>
-                <li><i class="fa-solid fa-house"/>Landscaped Entrance Arch</li>
-                <li><i class="fa-solid fa-house"/>Water Line Provision</li>
-                <li><i class="fa-solid fa-house"/>Underground Drainage System</li>
-                <li><i class="fa-solid fa-house"/>Rainwater Harvesting</li>
-                <li><i class="fa-solid fa-house"/>Children’s Play Area</li>
-                <li><i class="fa-solid fa-house"/>Green Open Spaces</li>
-                <li><i class="fa-solid fa-house"/>Clear Title Property</li>
-                <li><i class="fa-solid fa-house"/>DTCP Approved Layout</li>
-                </ul>
-            </div>
-
-            </div>
         </div>
-        </section>
 
+        <div className="villa-content">
 
-        <section className="villa-section">
-        <div className="villa-container">
+        <h2>{property.title}</h2>
 
-            {/* Left Image */}
-            <div className="villa-image">
-            <img src={city} alt="G Square City" />
-            <div className="villa-badge">Residential Plots</div>
-            </div>
+        <h4 className="location">{property.location}</h4>
 
-            {/* Right Content */}
-            <div className="villa-content">
+        <a href="tel:+919444386103" className="contact-btn">
+        Contact Now
+        </a>
 
-            <h2>G Square City – Premium Residential Plots</h2>
-            <h4 className="location">L&T BYPASS, COIMBATORE</h4>
-            <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
+        <div className="villa-details">
 
-            <div className="villa-details">
-
-                <div><strong>Project Type:</strong> Residential Plots</div>
-                <div><strong>Price Range:</strong> ₹57 Lakhs Onwards</div>
-                <div><strong>Plot Size:</strong> 3 - 4 Cents</div>
-                <div><strong>Approval:</strong> DTCP Approved</div>
-
-            </div>
-
-            <div className="overview">
-                <h5>Project Overview</h5>
-                <p>
-                G Square City offers premium residential plots located along 
-                L&T Bypass, Coimbatore. Starting from ₹57 Lakhs onwards,
-                the project features well-planned 3 to 4 cents plots
-                within a secure gated community.
-                Strategically positioned in a rapidly developing corridor,
-                it provides excellent connectivity to major schools,
-                colleges, hospitals and commercial centers.
-                With DTCP approval and clear title, it is ideal for 
-                building your dream home or making a smart investment.
-                </p>
-            </div>
-
-            <div className="amenities">
-                <h5>Amenities</h5>
-                <ul>
-                <li><i class="fa-solid fa-house"/>Gated Community</li>
-                <li><i class="fa-solid fa-house"/>Blacktop Internal Roads</li>
-                <li><i class="fa-solid fa-house"/>Street Lighting</li>
-                <li><i class="fa-solid fa-house"/>24/7 Security</li>
-                <li><i class="fa-solid fa-house"/>Landscaped Entrance Arch</li>
-                <li><i class="fa-solid fa-house"/>Water Line Provision</li>
-                <li><i class="fa-solid fa-house"/>Underground Drainage System</li>
-                <li><i class="fa-solid fa-house"/>Rainwater Harvesting</li>
-                <li><i class="fa-solid fa-house"/>Children’s Play Area</li>
-                <li><i class="fa-solid fa-house"/>Green Open Spaces</li>
-                <li><i class="fa-solid fa-house"/>Clear Title Property</li>
-                <li><i class="fa-solid fa-house"/>DTCP Approved Layout</li>
-                </ul>
-            </div>
-
-            </div>
+        <div>
+        <strong>Project Type:</strong> {property.details.type}
         </div>
-        </section>
-        <section className="villa-section">
-        <div className="villa-container">
 
-            {/* Left Image */}
-            <div className="villa-image">
-            <img src={radiance}alt="Radiance Splendour" />
-            <div className="villa-badge">Luxury Villas</div>
-            </div>
-
-            {/* Right Content */}
-            <div className="villa-content">
-
-            <h2>Radiance Splendour – 3 & 4 BHK Luxury Villas</h2>
-            <h4 className="location">VEDAPATTI, COIMBATORE</h4>
-            <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
-
-            <div className="villa-details">
-
-                <div><strong>Project Type:</strong> Villa</div>
-                <div><strong>Price Range:</strong> ₹36 Lakhs Onwards</div>
-                <div><strong>BedRooms:</strong> 3 & 4 BHK</div>
-                <div><strong>Property Area:</strong> 2105 SqFt - 3015 SqFt</div>
-
-            </div>
-
-            <div className="overview">
-                <h5>Project Overview</h5>
-                <p>
-                Radiance Splendour offers premium 3 & 4 BHK luxury villas
-                in Vedapatti, Coimbatore. Starting from ₹36 Lakhs onwards,
-                these spacious villas range between 2105 SqFt and 3015 SqFt.
-                Designed with contemporary architecture and superior specifications,
-                the project ensures comfortable living in a peaceful environment.
-                Located in a fast-growing residential locality with excellent
-                connectivity to schools, hospitals and commercial hubs,
-                it is ideal for families seeking space and elegance.
-                </p>
-            </div>
-
-            <div className="amenities">
-                <h5>Amenities</h5>
-                <ul>
-                <li><i class="fa-solid fa-house"/>Clubhouse</li>
-                <li><i class="fa-solid fa-house"/>Landscaped Garden</li>
-                <li><i class="fa-solid fa-house"/>Children’s Play Area</li>
-                <li><i class="fa-solid fa-house"/>Fully Equipped Gym</li>
-                <li><i class="fa-solid fa-house"/>Multipurpose Hall</li>
-                <li><i class="fa-solid fa-house"/>Indoor Games Room</li>
-                <li><i class="fa-solid fa-house"/>24/7 Security</li>
-                <li><i class="fa-solid fa-house"/>CCTV Surveillance</li>
-                <li><i class="fa-solid fa-house"/>Power Backup</li>
-                <li><i class="fa-solid fa-house"/>Rainwater Harvesting</li>
-                <li><i class="fa-solid fa-house"/>Covered Car Parking</li>
-                <li><i class="fa-solid fa-house"/>Gated Community</li>
-                </ul>
-            </div>
-
-            </div>
+        <div>
+        <strong>Flat Size:</strong> {property.details.size}
         </div>
-        </section>
-        <section className="villa-section">
-        <div className="villa-container">
 
-            <div className="villa-image">
-            <img src={cosmos} alt="Casagrand Cosmos Apartment" />
-            <div className="villa-badge">Premium Apartments</div>
-            </div>
-
-            <div className="villa-content">
-
-            <h2>Casagrand Cosmos – 2 & 3 BHK Apartments</h2>
-            <h4 className="location">VISWANATHAPURAM, COIMBATORE</h4>
-            <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
-
-            <div className="villa-details">
-                <div><strong>Project Type:</strong> Apartment</div>
-                <div><strong>Price Range:</strong> ₹29 Lakhs - ₹89 Lakhs</div>
-                <div><strong>BedRooms:</strong> 2 & 3 BHK</div>
-                <div><strong>Property Area:</strong> 625 SqFt - 1650 SqFt</div>
-            </div>
-
-            <div className="overview">
-                <h5>Project Overview</h5>
-                <p>
-                Casagrand Cosmos offers thoughtfully designed 2 & 3 BHK apartments
-                in Viswanathapuram, Coimbatore. With unit sizes ranging from
-                625 SqFt to 1650 SqFt and prices between ₹29 Lakhs to ₹89 Lakhs,
-                the project ensures affordable luxury living.
-                Strategically located with excellent connectivity to major schools,
-                hospitals and IT hubs, it provides modern amenities and a comfortable lifestyle.
-                </p>
-            </div>
-
-            <div className="amenities">
-                <h5>Amenities</h5>
-                <ul>
-                <li><i class="fa-solid fa-house"/>Clubhouse</li>
-                <li><i class="fa-solid fa-house"/>Swimming Pool</li>
-                <li><i class="fa-solid fa-house"/>Gym</li>
-                <li><i class="fa-solid fa-house"/>Children’s Play Area</li>
-                <li><i class="fa-solid fa-house"/>Indoor Games</li>
-                <li><i class="fa-solid fa-house"/>Landscaped Garden</li>
-                <li><i class="fa-solid fa-house"/>Power Backup</li>
-                <li><i class="fa-solid fa-house"/>24/7 Security</li>
-                </ul>
-            </div>
-
-            </div>
+        <div>
+        <strong>Location:</strong> {property.details.place}
         </div>
-        </section>
 
-          <section className="villa-section">
-        <div className="villa-container">
-
-            <div className="villa-image">
-            <img src={kosmos}alt="Casagrand Cosmos Villa" />
-            <div className="villa-badge">Luxury Villas</div>
-            </div>
-
-            <div className="villa-content">
-
-            <h2>Casagrand Cosmos – 3 & 4 BHK Villas</h2>
-            <h4 className="location">VISWANATHAPURAM, COIMBATORE</h4>
-            <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
-
-            <div className="villa-details">
-                <div><strong>Project Type:</strong> Villa</div>
-                <div><strong>Price Range:</strong> ₹33 Lakhs Onwards</div>
-                <div><strong>BedRooms:</strong> 3 & 4 BHK</div>
-                <div><strong>Property Area:</strong> 2500 SqFt - 3441 SqFt</div>
-            </div>
-
-            <div className="overview">
-                <h5>Project Overview</h5>
-                <p>
-                Casagrand Cosmos Villas offer spacious 3 & 4 BHK homes
-                in Viswanathapuram, Coimbatore. Starting from ₹33 Lakhs onwards,
-                these villas range between 2500 SqFt to 3441 SqFt.
-                Designed with contemporary architecture and premium finishes,
-                the project provides privacy, comfort and superior lifestyle amenities
-                within a secure gated community.
-                </p>
-            </div>
-
-            <div className="amenities">
-                <h5>Amenities</h5>
-                <ul>
-                <li><i class="fa-solid fa-house"/>Private Garden Space</li>
-                <li><i class="fa-solid fa-house"/>Clubhouse</li>
-                <li><i class="fa-solid fa-house"/>Gym</li>
-                <li><i class="fa-solid fa-house"/>Multipurpose Hall</li>
-                <li><i class="fa-solid fa-house"/>Children’s Play Area</li>
-                <li><i class="fa-solid fa-house"/>Power Backup</li>
-                <li><i class="fa-solid fa-house"/>Gated Community</li>
-                <li><i class="fa-solid fa-house"/>24/7 Security</li>
-                </ul>
-            </div>
-
-            </div>
+        <div>
+        <strong>Price:</strong> {property.details.price}
         </div>
-        </section>
 
-
-        <section className="villa-section">
-        <div className="villa-container">
-
-            <div className="villa-image">
-            <img src={prozone} alt="Prozone Palms" />
-            <div className="villa-badge">Premium Apartments</div>
-            </div>
-
-            <div className="villa-content">
-
-            <h2>Prozone Palms – 1, 2 & 3 BHK Apartments</h2>
-            <h4 className="location">SARAVANAMPATTI, COIMBATORE</h4>
-            <a href="tel:+91 94443 86103" className="contact-btn">Contact Now</a>
-
-            <div className="villa-details">
-                <div><strong>Project Type:</strong> Apartment</div>
-                <div><strong>Price Range:</strong> ₹1.47 Cr Onwards</div>
-                <div><strong>BedRooms:</strong> 1, 2 & 3 BHK</div>
-                <div><strong>Property Area:</strong> 721 SqFt - 1753 SqFt</div>
-            </div>
-
-            <div className="overview">
-                <h5>Project Overview</h5>
-                <p>
-                Prozone Palms offers modern 1, 2 & 3 BHK apartments
-                in Saravanampatti, Coimbatore. With sizes ranging from
-                721 SqFt to 1753 SqFt, the project is ideal for families
-                seeking urban convenience and lifestyle comfort.
-                Located close to IT parks, educational institutions
-                and commercial centers, it ensures excellent connectivity
-                and strong investment potential.
-                </p>
-            </div>
-
-            <div className="amenities">
-                <h5>Amenities</h5>
-                <ul>
-                <li><i class="fa-solid fa-house"/>Clubhouse</li>
-                <li><i class="fa-solid fa-house"/>Swimming Pool</li>
-                <li><i class="fa-solid fa-house"/>Gym</li>
-                <li><i class="fa-solid fa-house"/>Landscaped Gardens</li>
-                <li><i class="fa-solid fa-house"/>Indoor Games</li>
-                <li><i class="fa-solid fa-house"/>Children’s Play Area</li>
-                <li><i class="fa-solid fa-house"/>Power Backup</li>
-                <li><i class="fa-solid fa-house"/>24/7 Security</li>
-                </ul>
-            </div>
-
-            </div>
         </div>
-        </section>
-      
 
+        <div className="overview">
 
-        <Cta/>
-        
-        </>
+        <h5>Project Overview</h5>
+
+        <p>{property.overview}</p>
+
+        </div>
+
+        <div className="amenities">
+
+        <h5>Amenities</h5>
+
+        <ul>
+
+        {property.amenities.map((amenity, i) => (
+
+        <li key={i}>
+
+        <i className="fa-solid fa-house"></i> {amenity}
+
+        </li>
+
+        ))}
+
+        </ul>
+
+        </div>
+
+        </div>
+
+        </div>
+
+    </section>
+
+    ))}
+
+    <Cta />
+
+    </>
+
     );
 }
 
