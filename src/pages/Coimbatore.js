@@ -27,11 +27,202 @@ import CasagrandAlpine from "../images/images-1/CasagrandAlpine.jpg";
 import RadianceRiverwoods from "../images/images-1/RadianceRiverwoods.jpg";
 import RadianceImperia from "../images/images-1/RadianceImperia.png";
 
+import InfiniumLotusMeadows from "../images/images-1/InfiniumLotusMeadows.webp";
+import InfiniumCentral16 from "../images/images-1/InfiniumCentral16.webp";
+import InfiniumCrimsonCrest from "../images/images-1/InfiniumCrimsonCrest.jpg";
+import InfiniumSky9 from "../images/images-1/InfiniumSky9.jpg";
+
+import GoldenGrove from "../images/images-1/GoldenGrove.jpg";
 
 import Cta from '../sections/Cta';
 
 function Coimbatore(){
 const properties = [
+      {
+        image: GoldenGrove,
+        badge: "DTCP Approved Villa Plots",
+        title: "Pressana Infra - Golden Grove",
+        location: "NANJUNDAPURAM, COIMBATORE",
+        details: {
+          type: "Gated Community Villa Plots",
+          size: "Villa Plots",
+          place: "Nanjundapuram, Coimbatore",
+          price: "Price On Request"
+        },
+        overview:
+          "Golden Grove by Pressana Infra is a DTCP & RERA-approved gated community spread across 14.45 acres in Nanjundapuram, Coimbatore. The project offers 216 thoughtfully planned villa plots ranging from 1.27 cents to 6.55 cents designed for comfortable residential living. With strong connectivity to key areas of the city and surrounded by essential infrastructure, the community provides a balanced environment for both living and long-term investment.",
+        amenities: [
+          "Gated Community",
+          "Blacktop Roads",
+          "Street Lights",
+          "Landscaped Green Spaces",
+          "Children’s Play Area",
+          "Walking Pathways",
+          "Security Surveillance"
+        ]
+      },
+      {
+        image: InfiniumSky9,
+        badge: "2 & 3 BHK Apartments",
+        title: "Infinium Sky9",
+        location: "GOLDWINS, COIMBATORE",
+        details: {
+          type: "Premium Apartment Community",
+          size: "2 & 3 BHK Apartments",
+          place: "Goldwins, Coimbatore",
+          price: "₹76 Lacs Onwards"
+        },
+        overview:
+          "Infinium Sky9 is a high-rise residential community located on Veeriyampalayam Road, Goldwins just 2 minutes from Avinashi Road. Spread across 2.16 acres, the project offers 216 thoughtfully designed 2 & 3 BHK apartments built in a Basement + Stilt + 9 floor structure. The community features 35 lifestyle amenities and a 10,000 sq.ft clubhouse designed to provide a modern and comfortable living experience.",
+        amenities: [
+          "Swimming Pool",
+          "Kids Pool",
+          "Indoor Gym",
+          "Indoor Games Room",
+          "Indoor Kids Play Area",
+          "Mini Theatre",
+          "Party Hall",
+          "Yoga Room",
+          "Aerobics Room",
+          "Business Centre",
+          "Grocery Store",
+          "Ironing Space",
+          "School Bus Bay",
+          "Walking & Jogging Track",
+          "Turf (Football / Cricket)",
+          "Badminton Court",
+          "Elders Plaza",
+          "Rock Climbing Wall",
+          "Outdoor Children's Play Area",
+          "Trampoline",
+          "Entry Plaza with Seater",
+          "Water Feature Wall",
+          "Outdoor Gym",
+          "Restroom for Househelp and Drivers",
+          "Rainwater Harvesting",
+          "Sewage Treatment Plant",
+          "Water Softening Plant"
+        ]
+      },
+      {
+        image: InfiniumCrimsonCrest,
+        badge: "2 & 3 BHK Apartments",
+        title: "Infinium Crimson Crest",
+        location: "TIDEL PARK AREA, COIMBATORE",
+        details: {
+          type: "Premium Apartment Community",
+          size: "2 & 3 BHK Apartments",
+          place: "Tidel Park Area, Coimbatore",
+          price: "₹85 Lacs Onwards"
+        },
+        overview:
+          "Infinium Crimson Crest is a premium residential community spread across 1.50 acres with 130 apartments. Built in a Basement + Ground + 5 floor structure, the project offers spacious 2 & 3 BHK apartments ranging from 1225 sq.ft to 1520 sq.ft. Located close to Tidel Park, the community provides 40+ lifestyle amenities and a 15,000 sq.ft grand clubhouse designed to offer a comfortable and modern living experience.",
+        amenities: [
+          "Swimming Pool",
+          "Kid's Pool",
+          "Badminton Court",
+          "Turf",
+          "Outdoor Gym",
+          "Children’s Play Area",
+          "Dining Deck",
+          "Pebble Bed",
+          "Yoga Deck",
+          "Meditation Lawn",
+          "Deck with Lounge Seating",
+          "Rooftop Barbeque Lawn",
+          "Trampoline",
+          "Rock Climbing Wall",
+          "Reflexology Pathway",
+          "Party Lawn",
+          "Croquet Court",
+          "Outdoor Stage with Feature Wall",
+          "Toddler’s Park",
+          "Outdoor Chess",
+          "Sensory Floor Game",
+          "Elder Plaza with Seater",
+          "Podium with Ample Seater and Greenery",
+          "Gym",
+          "Game Room",
+          "Mini Theatre",
+          "Party Hall"
+        ]
+      },
+
+      {
+        image: InfiniumCentral16,
+        badge: "4 BHK Villas",
+        title: "Infinium Central 16",
+        location: "SINGANALLUR, COIMBATORE",
+        details: {
+          type: "Luxury Villa Community",
+          size: "4 BHK Villas",
+          place: "Singanallur, Coimbatore",
+          price: "₹4.50 Crs Onwards"
+        },
+        overview:
+          "Infinium Central 16 is an ultra-luxurious villa community spread across 1.42 acres offering 16 exclusive 4 BHK villas. Inspired by Mediterranean architecture, the villas are designed with spacious layouts, indoor-outdoor living concepts, abundant natural light, and breezy interiors suited to Coimbatore’s climate. The development combines premium design with thoughtfully planned amenities to create an elegant and private residential environment.",
+        amenities: [
+          "Party Hall",
+          "Indoor Gym",
+          "Indoor Games Room",
+          "Barbeque Station",
+          "Aroma Garden",
+          "Rainwater Harvesting",
+          "UG Sump with Water Softening Plant",
+          "CCTV Surveillance",
+          "24x7 Security",
+          "Intercom",
+          "Outdoor Landscape",
+          "Well-defined Driveway",
+          "App-based Entry / Exit Controls",
+          "Common Area & Compound Wall Lighting",
+          "Solar Water Heaters for Every Villa",
+          "Private Garden"
+        ]
+      },
+
+      {
+        image: InfiniumLotusMeadows,
+        badge: "2, 3 & 4 BHK Villas & Apartments",
+        title: "Infinium Lotus Meadows",
+        location: "SARAVANAMPATTI, COIMBATORE",
+        details: {
+          type: "Premium Villa & Apartment Community",
+          size: "2, 3 & 4 BHK Villas & Apartments",
+          place: "Saravanampatti, Coimbatore",
+          price: "₹80 L Onwards"
+        },
+        overview:
+          "Infinium Lotus Meadows is a premium residential community in Saravanampatti spread across 4.21 acres with 104 units including 39 villas and 65 apartments. The project offers 3 & 4 BHK villas and 2 & 3 BHK apartments designed with spacious layouts and Vaastu-friendly planning. With 60% open space and 50+ lifestyle amenities, the community provides a balanced environment combining modern living with serene surroundings.",
+        amenities: [
+          "Indoor Gym",
+          "Multipurpose Hall",
+          "Mini Theatre",
+          "Indoor Games Room",
+          "Aerobics Lounge",
+          "Business Centre",
+          "Arrival Plaza with Shade Structure",
+          "Bus Pickup Zone",
+          "KOI Pond",
+          "Lotus Leaf Structure",
+          "Pedestrian Pathway",
+          "Outdoor Gym",
+          "Sculpture Court",
+          "Kid's Play Area",
+          "Outdoor Board Games",
+          "Rock Climbing Wall",
+          "Herb Garden",
+          "Elder's Court",
+          "Mini Soccer",
+          "Cricket Turf",
+          "Badminton Court",
+          "Pickle Ball Court",
+          "Stage with Feature Wall",
+          "Lotus Plaza",
+          "Multi-Level Deck",
+          "Thematic Garden"
+        ]
+      },
       {
         image: RadianceImperia,
         badge: "3, 3.5, 4 & 5 BHK Villas",
@@ -70,22 +261,7 @@ const properties = [
           "Sauna",
           "Jacuzzi",
           "Reading Room",
-          "Chess",
-          "Carrom",
-          "Foosball",
-          "Table Tennis",
-          "Billiards Table",
-          "Dart Board",
-          "Co-Working Space",
-          "Children's Play Area",
-          "Ball Pit",
-          "Virtual Golf / Video Games",
-          "Art Room",
-          "Badminton Court",
-          "Banquet Hall",
-          "Home Theatre",
-          "Gazebo",
-          "Swimming Pool with Kids Pool"
+          "More.."
         ]
       },
 

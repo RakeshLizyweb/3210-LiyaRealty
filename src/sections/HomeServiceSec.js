@@ -28,6 +28,12 @@ import CasagrandSpacio from "../images/images-1/Casagrand-Spacio.jpg";
 import RadianceRiverwoods from "../images/images-1/RadianceRiverwoods.jpg";
 import RadianceImperia from "../images/images-1/RadianceImperia.png";
 
+import InfiniumLotusMeadows from "../images/images-1/InfiniumLotusMeadows.webp";
+import InfiniumCentral16 from "../images/images-1/InfiniumCentral16.webp";
+import InfiniumCrimsonCrest from "../images/images-1/InfiniumCrimsonCrest.jpg";
+import InfiniumSky9 from "../images/images-1/InfiniumSky9.jpg";
+
+import GoldenGrove from "../images/images-1/GoldenGrove.jpg";
 
 // chennai
 import utopia from "../images/images-1/utopia.jpg";
@@ -43,6 +49,46 @@ function HomeServiceSec(){
     const [visibleCount, setVisibleCount] = useState(9);
 
     const properties = [
+    {
+        image: GoldenGrove,
+        title: "Pressana Infra - Golden Grove",
+        location: "Nanjundapuram, Coimbatore",
+        size: `14.45 Acres`,
+        price: "Price On Request",
+        type: "DTCP Approved Villa Plots"
+    },
+    {
+        image: InfiniumSky9,
+        title: "Infinium Sky9",
+        location: "Goldwins, Coimbatore",
+        size: `2.16 Acres`,
+        price: "₹76 Lacs Onwards",
+        type: "2 & 3 BHK Apartments"
+    },
+    {
+        image: InfiniumCrimsonCrest,
+        title: "Infinium Crimson Crest",
+        location: "Tidel Park Area, Coimbatore",
+        size: `1.50 Acres`,
+        price: "₹85 Lacs Onwards",
+        type: "2 & 3 BHK Apartments"
+    },
+    {
+        image: InfiniumCentral16,
+        title: "Infinium Central 16",
+        location: "Singanallur, Coimbatore",
+        size: `1.42 Acres`,
+        price: "₹4.50 Crs Onwards",
+        type: "4 BHK Villas"
+    },
+    {
+        image: InfiniumLotusMeadows,
+        title: "Infinium Lotus Meadows",
+        location: "Saravanampatti, Coimbatore",
+        size: `4.21 Acres`,
+        price: "₹80 L Onwards",
+        type: "2, 3 & 4 BHK Villas & Apartments"
+    },
     {
         image: RadianceImperia,
         title: "Radiance Imperia",
