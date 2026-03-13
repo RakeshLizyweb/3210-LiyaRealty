@@ -16,7 +16,6 @@ import Cta from '../sections/Cta';
 function Chennai() {
 
 const properties = [
-
         {
             image: radiance,
             badge: "Luxury Apartments",

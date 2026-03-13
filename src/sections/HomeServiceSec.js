@@ -2,9 +2,6 @@ import '../css/style-1.css';
 import '../css/style-2.css';
 import '../css/style.css';
 
-import Project1 from '../images/project1.jpg'
-
-
 // Coimbatore
 import prozone from "../images/images-1/prozone.jpg";
 import radiancesplender from "../images/images-1/radiance-splendour.jpg";
@@ -17,18 +14,113 @@ import cosmos2 from "../images/images-1/kosmo.jpg"
 import tvhcrest from "../images/images-1/tvhcrest.jpg";
 import tvhSerenity from "../images/images-1/tvhserenity.jpg";
 
+import CasagrandAlpine from "../images/images-1/CasagrandAlpine.jpg";
+import CasagrandColosseum from "../images/images-1/CasagrandColosseum.png";
+import CasagrandOrchardsPhase1 from "../images/images-1/CasagrandOrchardsPhase1.jpg";
+import CasagrandCelest from "../images/images-1/CasagrandCelest.jpg";
+import CasagrandOrchardsVillaPH2 from "../images/images-1/CasagrandOrchardsVillaPH2.png";
+import CasagrandKeystone from "../images/images-1/CasagrandKeystone.jpg";
+import CasagrandAscentia from "../images/images-1/CasagrandAscentia.webp";
+import CasagrandSpacio from "../images/images-1/Casagrand-Spacio.jpg";
+
+import RadianceRiverwoods from "../images/images-1/RadianceRiverwoods.jpg";
+import RadianceImperia from "../images/images-1/RadianceImperia.png";
+
+
 // chennai
 import utopia from "../images/images-1/utopia.jpg";
 import radiancesupreme from "../images/images-1/radiancesuprema.jpg";
 import blue from"../images/images-1/bluewalllahari.jpg";
 import gayatri from"../images/images-1/gayatri.jpg";
 import shakti from"../images/images-1/shakti.jpg";
-import RadiaRecidencia from"../images/images-1/Radia-recidencia.jpg";
+import RadiaRecidencia from "../images/images-1/Radia-recidencia.jpg";
+
+
 
 function HomeServiceSec(){
+    const properties = [
+    {
+        image: RadianceImperia,
+        title: "Radiance Imperia",
+        location: "Veerakeralam, Coimbatore",
+        size: `8.17 Acres`,
+        price: "₹2.27 Cr Onwards",
+        type: "3, 3.5, 4 & 5 BHK Villas"
+    },
+    {
+        image: RadianceRiverwoods,
+        title: "Radiance Riverwoods",
+        location: "Perur Main Road, Coimbatore",
+        size: `3 Acres`,
+        price: "₹54 L to ₹1.21 Cr",
+        type: "1, 2 & 3 BHK Apartments"
+    },
 
+    {
+        image: CasagrandAlpine,
+        title: "Casagrand Alpine",
+        location: "Keeranatham, Coimbatore",
+        size: `1.4 Acres`,
+        price: "₹71L - ₹98 L",
+        type: "2 & 3 BHK Apartments"
+    },
 
-        const properties = [
+    {
+        image: CasagrandColosseum,
+        title: "Casagrand Colosseum",
+        location: "Avarampalayam, Coimbatore",
+        size: `2.6 Acres`,
+        price: "₹6.66Cr to 6.86Cr",
+        type: "4 BHK Villas"
+    },
+    {
+        image: CasagrandOrchardsPhase1,
+        title: "Casagrand Orchards Phase I",
+        location: "Kannampalayam, Coimbatore",
+        size: `9.52 Acres`,
+        price: "₹71 L to ₹99 L",
+        type: "2 & 3 BHK Apartments"
+    },
+    {
+        image: CasagrandCelest,
+        title: "Casagrand Celest",
+        location: "Sulur, Coimbatore",
+        size: `2.66 Acres`,
+        price: "₹ 56L to ₹ 70L",
+        type: "2 & 3 BHK Apartments"
+    },
+    {
+        image: CasagrandOrchardsVillaPH2,
+        title: "Casagrand Orchards Villa – PH II",
+        location: "Kannampalayam, Coimbatore",
+        size: `9.52 Acres`,
+        price: "₹ 1.60 Cr to ₹ 2.25 Cr",
+        type: "3 & 4 BHK Villas"
+    },
+    {
+        image: CasagrandKeystone,
+        title: "Casagrand Keystone",
+        location: "Rakkiyapalayam, Tiruppur, Coimbatore",
+        size: `2.2 Acres`,
+        price: "₹ 68L - ₹ 99L",
+        type: "2 & 3 BHK Apartments"
+    },
+    {
+        image: CasagrandAscentia,
+        title: "Casagrand Ascentia",
+        location: "Saravanampatti, Coimbatore",
+        size: `4 Acres`,
+        price: "₹ 65 L Onwards",
+        type: "2 & 3 BHK Apartments"
+        },
+    {
+        image: CasagrandSpacio,
+        title: "Casagrand Spacio",
+        location: "Chettipalayam, Tirupur, Coimbatore",
+        size: `2 Acres`,
+        price: "₹ 2.49Cr Onwards",
+        type: "4 BHK Villa"
+    },
     {
         image: tvhSerenity,
         title: "TVH Serenity",
