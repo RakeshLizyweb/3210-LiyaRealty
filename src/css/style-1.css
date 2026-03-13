@@ -620,6 +620,10 @@
     font-size: 36px;
   }
 }
+.Load-more-btn{
+  background-color: var(--sub);
+  color:white;
+}
 
 /* About why choose us */
 

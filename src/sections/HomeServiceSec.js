@@ -2,6 +2,8 @@ import '../css/style-1.css';
 import '../css/style-2.css';
 import '../css/style.css';
 
+import { useState } from "react";
+
 // Coimbatore
 import prozone from "../images/images-1/prozone.jpg";
 import radiancesplender from "../images/images-1/radiance-splendour.jpg";
@@ -36,8 +38,10 @@ import shakti from"../images/images-1/shakti.jpg";
 import RadiaRecidencia from "../images/images-1/Radia-recidencia.jpg";
 
 
-
 function HomeServiceSec(){
+
+    const [visibleCount, setVisibleCount] = useState(9);
+
     const properties = [
     {
         image: RadianceImperia,
@@ -251,7 +255,10 @@ function HomeServiceSec(){
     }
     ];
 
- 
+    const loadMoreProjects = () => {
+        setVisibleCount(prev => prev + 9);
+    };
+
     return(
         <> 
             <section className="homeServiceSection py-5">
@@ -267,7 +274,7 @@ function HomeServiceSec(){
                     </div>
 
                     <div className="row">
-                        {properties.map((property, index) => (
+                        {properties.slice(0, visibleCount).map((property, index) => (
                             <div className="col-lg-4 col-md-6 mb-4" key={index}>
                             <div className="homeServiceCard">
 
@@ -288,13 +295,21 @@ function HomeServiceSec(){
                             </div>
                             </div>
                         ))}
-                        </div>
+                    </div>
 
+                    {visibleCount < properties.length && (
+                        <div className="text-center mt-4">
+                            <button className="btn btn-primary Load-more-btn" onClick={loadMoreProjects}>
+                                Load More
+                            </button>
+                        </div>
+                    )}
 
                 </div>
             </section>
         </>
     );
 }
+
 
 export default HomeServiceSec;
