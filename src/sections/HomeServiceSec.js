@@ -43,11 +43,7 @@ import gayatri from"../images/images-1/gayatri.jpg";
 import shakti from"../images/images-1/shakti.jpg";
 import RadiaRecidencia from "../images/images-1/Radia-recidencia.jpg";
 
-
 function HomeServiceSec(){
-
-    const [visibleCount, setVisibleCount] = useState(9);
-
     const properties = [
     {
         image: GoldenGrove,
@@ -300,6 +296,8 @@ function HomeServiceSec(){
         type: "2,3 & 4 BHK Apartment"
     }
     ];
+
+    const [visibleCount, setVisibleCount] = useState(9);
 
     const loadMoreProjects = () => {
         setVisibleCount(prev => prev + 9);
