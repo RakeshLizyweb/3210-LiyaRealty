@@ -33,7 +33,12 @@ import InfiniumCentral16 from "../images/images-1/InfiniumCentral16.webp";
 import InfiniumCrimsonCrest from "../images/images-1/InfiniumCrimsonCrest.jpg";
 import InfiniumSky9 from "../images/images-1/InfiniumSky9.jpg";
 
-import GoldenGrove from "../images/images-1/GoldenGrove.jpg";
+import GoldenGrove from "../images/images-1/GoldenGrove.avif";
+
+import Turin from "../images/images-1/Turin.jpeg";
+import Patio from "../images/images-1/Patio.jpg";
+
+import DACThulir from "../images/images-1/DACThulir.jpg";
 
 // chennai
 import utopia from "../images/images-1/utopia.jpg";
@@ -45,6 +50,30 @@ import RadiaRecidencia from "../images/images-1/Radia-recidencia.jpg";
 
 function HomeServiceSec(){
     const properties = [
+    {
+        image: DACThulir,
+        title: "DAC Thulir",
+        location: "GN Mills, Coimbatore",
+        size: `976 to 1460 sq.ft`,
+        price: "₹ 65 Lakhs Onwards",
+        type: "2 & 3 BHK Apartments"
+    },
+    {
+        image: Patio,
+        title: "Patio",
+        location: "Coimbatore",
+        size: `544 – 876 sq.ft`,
+        price: "Price On Request",
+        type: "1 & 2 BHK Apartments"
+    },
+    {
+        image: Turin,
+        title: "Turin",
+        location: "Coimbatore",
+        size: `—`,
+        price: "Price On Request",
+        type: "2 & 3 BHK Apartments"
+    },
     {
         image: GoldenGrove,
         title: "Pressana Infra - Golden Grove",

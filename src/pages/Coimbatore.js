@@ -32,12 +32,89 @@ import InfiniumCentral16 from "../images/images-1/InfiniumCentral16.webp";
 import InfiniumCrimsonCrest from "../images/images-1/InfiniumCrimsonCrest.jpg";
 import InfiniumSky9 from "../images/images-1/InfiniumSky9.jpg";
 
-import GoldenGrove from "../images/images-1/GoldenGrove.jpg";
+import GoldenGrove from "../images/images-1/GoldenGrove.avif";
+
+import Turin from "../images/images-1/Turin.jpeg";
+import Patio from "../images/images-1/Patio.jpg";
+
+import DACThulir from "../images/images-1/DACThulir.jpg";
 
 import Cta from '../sections/Cta';
 
 function Coimbatore(){
 const properties = [
+      {
+        image: DACThulir,
+        badge: "2 & 3 BHK Apartments",
+        title: "DAC Thulir",
+        location: "GN MILLS, COIMBATORE",
+        details: {
+          type: "Premium Apartment Community",
+          size: "2 & 3 BHK Apartments",
+          place: "GN Mills, Coimbatore",
+          price: "₹ 65 Lakhs Onwards"
+        },
+        overview:
+          "DAC Thulir is a premium residential community located in GN Mills offering 54 thoughtfully designed 2 & 3 BHK apartments. Built in an S + 5 floor structure, the project features homes ranging from 976 sq.ft to 1460 sq.ft designed with modern architecture and eco-friendly elements. The community focuses on providing a balanced lifestyle with a blend of comfort, convenience, and natural surroundings.",
+        amenities: [
+          "Indoor Games Room",
+          "Association Room",
+          "Air Conditioned Gym",
+          "Kids Play Area",
+          "Senior Citizen Zone",
+          "Pergola Seating",
+          "Sitout Area",
+          "Herb Garden with Seating",
+          "Yoga Meditation Zone",
+          "BBQ Corner"
+        ]
+      },
+      {
+        image: Patio,
+        badge: "1 & 2 BHK Apartments",
+        title: "Patio",
+        location: "COIMBATORE",
+        details: {
+          type: "Premium Apartment Community",
+          size: "1 & 2 BHK Apartments",
+          place: "Coimbatore",
+          price: "Price On Request"
+        },
+        overview:
+          "Patio is a premium apartment community in Coimbatore offering 1 & 2 BHK homes with unit sizes ranging from 544 to 876 sq.ft. Designed to deliver a balance of comfort and affordability, the project features thoughtfully planned living spaces with modern design elements. The development focuses on providing a refined lifestyle experience in a well-connected location.",
+        amenities: [
+          "Gym",
+          "Night View Area",
+          "Party Wall",
+          "Indoor Game",
+          "Swimming Pool",
+          "Multipurpose Hall",
+          "Podium Garden with Seating Area"
+        ]
+      },
+      {
+        image: Turin,
+        badge: "2 & 3 BHK Apartments",
+        title: "Turin",
+        location: "COIMBATORE",
+        details: {
+          type: "Premium Apartment Community",
+          size: "2 & 3 BHK Apartments",
+          place: "Coimbatore",
+          price: "Price On Request"
+        },
+        overview:
+          "Turin is an Italian-inspired premium apartment community in Coimbatore offering 2 & 3 BHK homes. Designed with refined architecture and elegant interiors, the project focuses on modern living with thoughtfully planned spaces. Inspired by the timeless charm of Turin city, the development brings a sophisticated residential experience with a blend of style and comfort.",
+        amenities: [
+          "Gym",
+          "Night View Area",
+          "Party Wall",
+          "Indoor Game",
+          "Swimming Pool",
+          "Multipurpose Hall",
+          "Podium Garden with Seating Area"
+        ]
+      },
       {
         image: GoldenGrove,
         badge: "DTCP Approved Villa Plots",
