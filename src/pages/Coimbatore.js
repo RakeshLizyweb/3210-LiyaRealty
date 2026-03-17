@@ -2,7 +2,6 @@ import '../css/style-1.css';
 import '../css/style-2.css';
 import '../css/style.css';
 
-
 import coimbatorepath from "../images/images-1/coimbatore.jpg";
 import prozone from "../images/images-1/prozone.jpg";
 import radiance from "../images/images-1/radiance-splendour.jpg";
