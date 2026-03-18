@@ -81,7 +81,7 @@ function Contact(){
                         <div className="contact-page-form-card">
                         <h3 className="contact-page-form-title">Send Us a Message</h3>
 
-                        <form action="mail.php" method="POST">
+                        <form action="contact.php" method="POST">
                             <input 
                                 type="text" 
                                 name="name"
