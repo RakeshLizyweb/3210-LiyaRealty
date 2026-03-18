@@ -49,6 +49,7 @@ import shakti from"../images/images-1/shakti.jpg";
 import RadiaRecidencia from "../images/images-1/Radia-recidencia.jpg";
 
 function HomeServiceSec(){
+
     const properties = [
     {
         image: DACThulir,
@@ -383,6 +384,5 @@ function HomeServiceSec(){
         </>
     );
 }
-
 
 export default HomeServiceSec;
