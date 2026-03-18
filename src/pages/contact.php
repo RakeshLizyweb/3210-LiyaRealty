@@ -26,7 +26,6 @@ else if(trim($comments) == '') {
 
 $to = "mohammadashif0045@gmail.com";
 
-
 $subject = 'You\'ve been contacted by ' . $name . '.';
 
 $msg = "Name: ".$name."\n\nemail: ".$email."\n\nphone: ".$phone."\n\nCommets:\n".$comments;
