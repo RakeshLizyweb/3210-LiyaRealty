@@ -77,7 +77,7 @@ function Contact(){
                 <div className="contact-page-container">
                     <div className="contact-page-row">
 
-                    <div className="contact-page-form-col">
+                    {/* <div className="contact-page-form-col">
                         <div className="contact-page-form-card">
                         <h3 className="contact-page-form-title">Send Us a Message</h3>
 
@@ -118,7 +118,7 @@ function Contact(){
                             </button>
                         </form>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className="contact-page-map-col">
                         <h3 className="contact-page-map-title text-white pb-3 text-center">VISIT US</h3>
