@@ -50,6 +50,7 @@ import RadiaRecidencia from "../images/images-1/Radia-recidencia.jpg";
 
 function HomeServiceSec(){
 
+    
     const properties = [
     {
         image: DACThulir,
