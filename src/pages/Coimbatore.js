@@ -2,6 +2,9 @@ import '../css/style-1.css';
 import '../css/style-2.css';
 import '../css/style.css';
 
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 import coimbatorepath from "../images/images-1/coimbatore.jpg";
 import prozone from "../images/images-1/prozone.jpg";
 import radiance from "../images/images-1/radiance-splendour.jpg";
@@ -802,6 +805,18 @@ const properties = [
       ];
 
 
+      const location = useLocation();
+
+      useEffect(() => {
+        if (location.hash) {
+          const el = document.getElementById(location.hash.replace("#", ""));
+          if (el) {
+            setTimeout(() => {
+              el.scrollIntoView({ behavior: "smooth" });
+            }, 100);
+          }
+        }
+      }, [location]);
 
 
     return (
@@ -854,7 +869,9 @@ const properties = [
 
     {properties.map((property, index) => (
 
-    <section className="villa-section" key={index}>
+    <section className="villa-section" 
+            key={index}
+            id={property.title.replace(/\s+/g, "-").toLowerCase()}>
 
         <div className="villa-container">
 

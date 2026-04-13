@@ -2,6 +2,9 @@ import '../css/style-1.css';
 import '../css/style-2.css';
 import '../css/style.css';
 
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 import utopia from "../images/images-1/utopia.jpg";
 import chennaipath from "../images/images-1/chennai.jpg";
 import radiance from"../images/images-1/radiancesuprema.jpg";
@@ -19,7 +22,7 @@ const properties = [
         {
             image: radiance,
             badge: "Luxury Apartments",
-            title: "Radiance Suprema – 2, 3 & 4 BHK Luxury Apartments",
+            title: "Radiance Suprema",
             location: "MADHAVARAM, CHENNAI",
             details:{
                 type:"Apartments",
@@ -47,7 +50,7 @@ const properties = [
         {
             image: RadiaRecidencia,
             badge: "Premium Plots",
-            title: "Radiance Residencia – Premium Residential Plots",
+            title: "Radiance Residencia",
             location: "THAIYUR, OMR",
             details:{
                 type:"Plots",
@@ -71,7 +74,7 @@ const properties = [
         {
             image: utopia,
             badge: "Premium Apartments",
-            title: "Casagrand Utopia – 2 & 3 BHK Premium Apartments",
+            title: "Casagrand Utopia",
             location: "MANAPAKKAM, CHENNAI",
             details:{
                 type:"Apartments",
@@ -99,7 +102,7 @@ const properties = [
         {
             image: gayatri,
             badge: "Premium Apartment",
-            title: "Gayatri Adithya – 3 BHK Apartment",
+            title: "Gayatri Adithya",
             location: "BESANT NAGAR, CHENNAI",
             details:{
                 type:"Apartment",
@@ -123,7 +126,7 @@ const properties = [
         {
             image: shakti,
             badge: "Premium Apartments",
-            title: "Sakthi Enclave – 2 & 3 BHK Apartments",
+            title: "Sakthi Enclave",
             location: "ALWARPET, CHENNAI",
             details:{
                 type:"Apartments",
@@ -147,7 +150,7 @@ const properties = [
         {
             image: blue,
             badge: "Luxury Apartment",
-            title: "Blue Wall Lahari – 3 BHK Apartment",
+            title: "Blue Wall Lahari",
             location: "NUNGAMBAKKAM, CHENNAI",
             details:{
                 type:"Apartment",
@@ -169,6 +172,19 @@ const properties = [
         }
 
         ];
+
+        const location = useLocation();
+
+        useEffect(() => {
+        if (location.hash) {
+            const el = document.getElementById(location.hash.replace("#", ""));
+            if (el) {
+            setTimeout(() => {
+                el.scrollIntoView({ behavior: "smooth" });
+            }, 100);
+            }
+        }
+        }, [location]);
 
     return(
         <>
@@ -219,7 +235,9 @@ const properties = [
 
         {/* Property Loop */}
         {properties.map((property,index)=>(
-        <section className="villa-section" key={index}>
+        <section className="villa-section" 
+                    key={index}
+                    id={property.title.replace(/\s+/g, "-").toLowerCase()}>
 
             <div className="villa-container">
 

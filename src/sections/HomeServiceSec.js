@@ -3,6 +3,7 @@ import '../css/style-2.css';
 import '../css/style.css';
 
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 // Coimbatore
 import prozone from "../images/images-1/prozone.jpg";
@@ -53,6 +54,7 @@ function HomeServiceSec(){
     const properties = [
     {
         image: DACThulir,
+        city:"Coimbatore",
         title: "DAC Thulir",
         location: "GN Mills, Coimbatore",
         size: `976 to 1460 sq.ft`,
@@ -61,6 +63,7 @@ function HomeServiceSec(){
     },
     {
         image: Patio,
+        city:"Coimbatore",
         title: "Patio",
         location: "Coimbatore",
         size: `544 – 876 sq.ft`,
@@ -69,6 +72,7 @@ function HomeServiceSec(){
     },
     {
         image: Turin,
+        city:"Coimbatore",
         title: "Turin",
         location: "Coimbatore",
         size: `—`,
@@ -77,6 +81,7 @@ function HomeServiceSec(){
     },
     {
         image: GoldenGrove,
+        city:"Coimbatore",
         title: "Pressana Infra - Golden Grove",
         location: "Nanjundapuram, Coimbatore",
         size: `14.45 Acres`,
@@ -85,6 +90,7 @@ function HomeServiceSec(){
     },
     {
         image: InfiniumSky9,
+        city:"Coimbatore",
         title: "Infinium Sky9",
         location: "Goldwins, Coimbatore",
         size: `2.16 Acres`,
@@ -93,6 +99,7 @@ function HomeServiceSec(){
     },
     {
         image: InfiniumCrimsonCrest,
+        city:"Coimbatore",
         title: "Infinium Crimson Crest",
         location: "Tidel Park Area, Coimbatore",
         size: `1.50 Acres`,
@@ -101,6 +108,7 @@ function HomeServiceSec(){
     },
     {
         image: InfiniumCentral16,
+        city:"Coimbatore",
         title: "Infinium Central 16",
         location: "Singanallur, Coimbatore",
         size: `1.42 Acres`,
@@ -109,6 +117,7 @@ function HomeServiceSec(){
     },
     {
         image: InfiniumLotusMeadows,
+        city:"Coimbatore",
         title: "Infinium Lotus Meadows",
         location: "Saravanampatti, Coimbatore",
         size: `4.21 Acres`,
@@ -117,6 +126,7 @@ function HomeServiceSec(){
     },
     {
         image: RadianceImperia,
+        city:"Coimbatore",
         title: "Radiance Imperia",
         location: "Veerakeralam, Coimbatore",
         size: `8.17 Acres`,
@@ -125,6 +135,7 @@ function HomeServiceSec(){
     },
     {
         image: RadianceRiverwoods,
+        city:"Coimbatore",
         title: "Radiance Riverwoods",
         location: "Perur Main Road, Coimbatore",
         size: `3 Acres`,
@@ -134,6 +145,7 @@ function HomeServiceSec(){
 
     {
         image: CasagrandAlpine,
+        city:"Coimbatore",
         title: "Casagrand Alpine",
         location: "Keeranatham, Coimbatore",
         size: `1.4 Acres`,
@@ -143,6 +155,7 @@ function HomeServiceSec(){
 
     {
         image: CasagrandColosseum,
+        city:"Coimbatore",
         title: "Casagrand Colosseum",
         location: "Avarampalayam, Coimbatore",
         size: `2.6 Acres`,
@@ -151,6 +164,7 @@ function HomeServiceSec(){
     },
     {
         image: CasagrandOrchardsPhase1,
+        city:"Coimbatore",
         title: "Casagrand Orchards Phase I",
         location: "Kannampalayam, Coimbatore",
         size: `9.52 Acres`,
@@ -159,6 +173,7 @@ function HomeServiceSec(){
     },
     {
         image: CasagrandCelest,
+        city:"Coimbatore",
         title: "Casagrand Celest",
         location: "Sulur, Coimbatore",
         size: `2.66 Acres`,
@@ -167,6 +182,7 @@ function HomeServiceSec(){
     },
     {
         image: CasagrandOrchardsVillaPH2,
+        city:"Coimbatore",
         title: "Casagrand Orchards Villa – PH II",
         location: "Kannampalayam, Coimbatore",
         size: `9.52 Acres`,
@@ -175,6 +191,7 @@ function HomeServiceSec(){
     },
     {
         image: CasagrandKeystone,
+        city:"Coimbatore",
         title: "Casagrand Keystone",
         location: "Rakkiyapalayam, Tiruppur, Coimbatore",
         size: `2.2 Acres`,
@@ -183,6 +200,7 @@ function HomeServiceSec(){
     },
     {
         image: CasagrandAscentia,
+        city:"Coimbatore",
         title: "Casagrand Ascentia",
         location: "Saravanampatti, Coimbatore",
         size: `4 Acres`,
@@ -191,6 +209,7 @@ function HomeServiceSec(){
         },
     {
         image: CasagrandSpacio,
+        city:"Coimbatore",
         title: "Casagrand Spacio",
         location: "Chettipalayam, Tirupur, Coimbatore",
         size: `2 Acres`,
@@ -199,6 +218,7 @@ function HomeServiceSec(){
     },
     {
         image: tvhSerenity,
+        city:"Coimbatore",
         title: "TVH Serenity",
         location: "Avinashi, Coimbatore",
         size: `2 BHK – 868 – 1055 Sqft`,
@@ -207,6 +227,7 @@ function HomeServiceSec(){
     },
     {
         image: tvhcrest,
+        city:"Coimbatore",
         title: "Tvh Crest",
         location: "Avinashi, Coimbatore",
         size: `1 BHK – 784 SqFt \n 2 BHK – 1038 – 1154 SqFt`,
@@ -215,6 +236,7 @@ function HomeServiceSec(){
     },
     {
         image: ghats,
+        city:"Coimbatore",
         title: "G Square Western Ghats",
         location: "Palanthurai Road, Coimbatore",
         size: "3 - 4 Cents",
@@ -223,6 +245,7 @@ function HomeServiceSec(){
     },
     {
         image: blossom,
+        city:"Coimbatore",
         title: "G Square Blossom",
         location: "Avinashi, Coimbatore",
         size: "3 - 4 Cents",
@@ -231,6 +254,7 @@ function HomeServiceSec(){
     },
     {
         image: pride,
+        city:"Coimbatore",
         title: "G Square Pride TVS Nagar",
         location: "Edayarpalayam, Coimbatore",
         size: "3 - 6 Cents",
@@ -239,6 +263,7 @@ function HomeServiceSec(){
     },
     {
         image: city,
+        city:"Coimbatore",
         title: "G Square City",
         location: "L&T Bypass, Coimbatore",
         size: "3 - 4 Cents",
@@ -247,6 +272,7 @@ function HomeServiceSec(){
     },
     {
         image: radiancesplender,
+        city:"Coimbatore",
         title: "Radiance Spendour",
         location: "Vedapatti, Coimbatore",
         size: "2105 SqFt - 3015 SqFt",
@@ -255,6 +281,7 @@ function HomeServiceSec(){
     },
     {
         image: radiancesupreme,
+        city:"Chennai",
         title: "Radiance Suprema",
         location: "Madhavaram, Chennai",
         size: "992 - 1422 SqFt",
@@ -263,6 +290,7 @@ function HomeServiceSec(){
     },
     {
         image: RadiaRecidencia,
+        city:"Chennai",
         title: "Radiance Residencia",
         location: "Thaiyur, OMR",
         size: "982 - 2956 SqFt",
@@ -271,6 +299,7 @@ function HomeServiceSec(){
     },
     {
         image: cosmos,
+        city:"Coimbatore",
         title: "Casagrand Cosmos",
         location: "Viswanathapuram, Coimbatore",
         size: "625 SqFt - 1650 SqFt",
@@ -279,6 +308,7 @@ function HomeServiceSec(){
     },
     {
         image: cosmos2,
+        city:"Coimbatore",
         title: "Casagrand Cosmos",
         location: "Viswanathapuram, Coimbatore",
         size: "2500 SqFt - 3441 SqFt",
@@ -287,6 +317,7 @@ function HomeServiceSec(){
     },
     {
         image: prozone,
+        city:"Coimbatore",
         title: "Prozone Palms",
         location: "Saravanampatti, Coimbatore",
         size: "721 SqFt - 1753 SqFt",
@@ -295,6 +326,7 @@ function HomeServiceSec(){
     },
     {
         image: gayatri,
+        city:"Chennai",
         title: "Gayatri Adithya",
         location: "Besant Nagar, Chennai",
         size: "Starts from 1390 SqFt",
@@ -303,6 +335,7 @@ function HomeServiceSec(){
     },
     {
         image: shakti,
+        city:"Chennai",
         title: "Sakthi Enclave",
         location: "Alwarpet, Chennai",
         size: "1010 SqFt - 2000 SqFt",
@@ -311,6 +344,7 @@ function HomeServiceSec(){
     },
     {
         image: blue,
+        city:"Chennai",
         title: "Blue Wall Lahari",
         location: "Nungambakkam, Chennai",
         size: "2020 SqFt - 2904 SqFt",
@@ -319,6 +353,7 @@ function HomeServiceSec(){
     },
     {
         image: utopia,
+        city:"Chennai",
         title: "Casagrand Utopia",
         location: "Manapakkam, Chennai",
         size: "991 SqFt - 4,144 SqFt",
@@ -328,6 +363,7 @@ function HomeServiceSec(){
     ];
 
     const [visibleCount, setVisibleCount] = useState(9);
+    const navigate = useNavigate();
 
     const loadMoreProjects = () => {
         setVisibleCount(prev => prev + 9);
@@ -350,7 +386,12 @@ function HomeServiceSec(){
                     <div className="row">
                         {properties.slice(0, visibleCount).map((property, index) => (
                             <div className="col-lg-4 col-md-6 mb-4" key={index}>
-                            <div className="homeServiceCard">
+                            <div className="homeServiceCard"
+                                onClick={() =>
+                                    navigate(`/Properties/${property.city}#${property.title.replace(/\s+/g, "-").toLowerCase()}`)
+                                }
+                                style={{ cursor: "pointer" }}
+                            >
 
                                 <div className="homeServiceImage">
                                 <img src={property.image} alt={property.title} />
