@@ -120,7 +120,7 @@ const properties = [
       {
         image: GoldenGrove,
         badge: "DTCP Approved Villa Plots",
-        title: "Pressana Infra - Golden Grove",
+        title: "Pressana Infra Golden Grove",
         location: "NANJUNDAPURAM, COIMBATORE",
         details: {
           type: "Gated Community Villa Plots",
@@ -495,7 +495,7 @@ const properties = [
       {
         image: CasagrandKeystone,
         badge: "2 & 3 BHK Apartments",
-        title: "Casagrand Keystone – Premium 2 & 3 BHK Apartments",
+        title: "Casagrand Keystone Premium 2 & 3 BHK Apartments",
         location: "RAKKIYAPALAYAM, TIRUPPUR, COIMBATORE",
         details: {
           type: "Premium Apartment Community",
@@ -621,7 +621,7 @@ const properties = [
       {
         image: ghats,
         badge: "Residential Plots",
-        title: "G Square Western Ghats – Premium Residential Plots",
+        title: "G Square Western Ghats Premium Residential Plots",
         location: "PALANTHURAI ROAD, COIMBATORE",
         details: {
           type: "Residential Plots",
@@ -644,7 +644,7 @@ const properties = [
       {
         image: blossom,
         badge: "Residential Plots",
-        title: "G Square Blossom – Premium Residential Plots",
+        title: "G Square Blossom Premium Residential Plots",
         location: "AVINASHI, COIMBATORE",
         details: {
           type: "Residential Plots",
@@ -667,7 +667,7 @@ const properties = [
       {
         image: pride,
         badge: "Residential Plots",
-        title: "G Square Pride TVS Nagar – Premium Residential Plots",
+        title: "G Square Pride TVS Nagar Premium Residential Plots",
         location: "EDAYARPALAYAM, COIMBATORE",
         details: {
           type: "Residential Plots",
@@ -690,7 +690,7 @@ const properties = [
       {
         image: city,
         badge: "Residential Plots",
-        title: "G Square City – Premium Residential Plots",
+        title: "G Square City Premium Residential Plots",
         location: "L&T BYPASS, COIMBATORE",
         details: {
           type: "Residential Plots",
@@ -736,7 +736,7 @@ const properties = [
       {
         image: cosmos,
         badge: "Premium Apartments",
-        title: "Casagrand Cosmos – 2 & 3 BHK Apartments",
+        title: "Casagrand Cosmos 2 & 3 BHK Apartments",
         location: "VISWANATHAPURAM, COIMBATORE",
         details: {
           type: "Apartment",
@@ -759,7 +759,7 @@ const properties = [
       {
         image: kosmos,
         badge: "Luxury Villas",
-        title: "Casagrand Cosmos – 3 & 4 BHK Villas",
+        title: "Casagrand Cosmos 3 & 4 BHK Villas",
         location: "VISWANATHAPURAM, COIMBATORE",
         details: {
           type: "Villa",
@@ -782,7 +782,7 @@ const properties = [
       {
         image: prozone,
         badge: "Premium Apartments",
-        title: "Prozone Palms – 1, 2 & 3 BHK Apartments",
+        title: "Prozone Palms 1, 2 & 3 BHK Apartments",
         location: "SARAVANAMPATTI, COIMBATORE",
         details: {
           type: "Apartment",

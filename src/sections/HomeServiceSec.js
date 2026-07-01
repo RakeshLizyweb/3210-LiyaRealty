@@ -82,7 +82,7 @@ function HomeServiceSec(){
     {
         image: GoldenGrove,
         city:"Coimbatore",
-        title: "Pressana Infra - Golden Grove",
+        title: "Pressana Infra Golden Grove",
         location: "Nanjundapuram, Coimbatore",
         size: `14.45 Acres`,
         price: "Price On Request",
@@ -183,7 +183,7 @@ function HomeServiceSec(){
     {
         image: CasagrandOrchardsVillaPH2,
         city:"Coimbatore",
-        title: "Casagrand Orchards Villa – PH II",
+        title: "Casagrand Orchards Villa PH II",
         location: "Kannampalayam, Coimbatore",
         size: `9.52 Acres`,
         price: "₹ 1.60 Cr to ₹ 2.25 Cr",
@@ -192,7 +192,7 @@ function HomeServiceSec(){
     {
         image: CasagrandKeystone,
         city:"Coimbatore",
-        title: "Casagrand Keystone",
+        title: "Casagrand Keystone Premium 2 & 3 BHK Apartments",
         location: "Rakkiyapalayam, Tiruppur, Coimbatore",
         size: `2.2 Acres`,
         price: "₹ 68L - ₹ 99L",
@@ -201,7 +201,7 @@ function HomeServiceSec(){
     {
         image: CasagrandAscentia,
         city:"Coimbatore",
-        title: "Casagrand Ascentia",
+        title: "Casagrand Ascentia – Premium 2 & 3 BHK Apartments",
         location: "Saravanampatti, Coimbatore",
         size: `4 Acres`,
         price: "₹ 65 L Onwards",
@@ -210,7 +210,7 @@ function HomeServiceSec(){
     {
         image: CasagrandSpacio,
         city:"Coimbatore",
-        title: "Casagrand Spacio",
+        title: "Casagrand Spacio – Luxury 4 BHK Villas",
         location: "Chettipalayam, Tirupur, Coimbatore",
         size: `2 Acres`,
         price: "₹ 2.49Cr Onwards",
@@ -219,7 +219,7 @@ function HomeServiceSec(){
     {
         image: tvhSerenity,
         city:"Coimbatore",
-        title: "TVH Serenity",
+        title: "TVH Serenity Premium 2 BHK Flats",
         location: "Avinashi, Coimbatore",
         size: `2 BHK – 868 – 1055 Sqft`,
         price: "₹ 56.5 Lakhs Onwards",
@@ -228,7 +228,7 @@ function HomeServiceSec(){
     {
         image: tvhcrest,
         city:"Coimbatore",
-        title: "Tvh Crest",
+        title: "TVH Crest Premium 1 & 2 BHK Apartments",
         location: "Avinashi, Coimbatore",
         size: `1 BHK – 784 SqFt \n 2 BHK – 1038 – 1154 SqFt`,
         price: "1 BHK – ₹52.53 Lakhs onwards \n 2 BHK – ₹69.53 Lakhs onwards ",
@@ -237,7 +237,7 @@ function HomeServiceSec(){
     {
         image: ghats,
         city:"Coimbatore",
-        title: "G Square Western Ghats",
+        title: "G Square Western Ghats Premium Residential Plots",
         location: "Palanthurai Road, Coimbatore",
         size: "3 - 4 Cents",
         price: "₹ -- Lakhs Onwards",
@@ -246,7 +246,7 @@ function HomeServiceSec(){
     {
         image: blossom,
         city:"Coimbatore",
-        title: "G Square Blossom",
+        title: "G Square Blossom Premium Residential Plots",
         location: "Avinashi, Coimbatore",
         size: "3 - 4 Cents",
         price: "₹ 19.50 Lakhs Onwards",
@@ -255,7 +255,7 @@ function HomeServiceSec(){
     {
         image: pride,
         city:"Coimbatore",
-        title: "G Square Pride TVS Nagar",
+        title: "G Square Pride TVS Nagar Premium Residential Plots",
         location: "Edayarpalayam, Coimbatore",
         size: "3 - 6 Cents",
         price: "₹ 30 Lakhs Onwards",
@@ -264,7 +264,7 @@ function HomeServiceSec(){
     {
         image: city,
         city:"Coimbatore",
-        title: "G Square City",
+        title: "G Square City Premium Residential Plots",
         location: "L&T Bypass, Coimbatore",
         size: "3 - 4 Cents",
         price: "₹ 57 Lakhs Onwards",
@@ -273,7 +273,7 @@ function HomeServiceSec(){
     {
         image: radiancesplender,
         city:"Coimbatore",
-        title: "Radiance Spendour",
+        title: "Radiance Splendour 3 & 4 BHK Luxury Villas",
         location: "Vedapatti, Coimbatore",
         size: "2105 SqFt - 3015 SqFt",
         price: "₹ 36 Lakhs Onwards",
@@ -300,7 +300,7 @@ function HomeServiceSec(){
     {
         image: cosmos,
         city:"Coimbatore",
-        title: "Casagrand Cosmos",
+        title: "Casagrand Cosmos 2 & 3 BHK Apartments",
         location: "Viswanathapuram, Coimbatore",
         size: "625 SqFt - 1650 SqFt",
         price: "₹ 29 Lakhs - 89 Lakhs",
@@ -309,7 +309,7 @@ function HomeServiceSec(){
     {
         image: cosmos2,
         city:"Coimbatore",
-        title: "Casagrand Cosmos",
+        title: "Casagrand Cosmos 3 & 4 BHK Villas",
         location: "Viswanathapuram, Coimbatore",
         size: "2500 SqFt - 3441 SqFt",
         price: "Start from ₹ 33 Lakhs",
@@ -318,7 +318,7 @@ function HomeServiceSec(){
     {
         image: prozone,
         city:"Coimbatore",
-        title: "Prozone Palms",
+        title: "Prozone Palms 1, 2 & 3 BHK Apartments",
         location: "Saravanampatti, Coimbatore",
         size: "721 SqFt - 1753 SqFt",
         price: "Start from ₹ 1.47 Cr",
@@ -392,6 +392,7 @@ function HomeServiceSec(){
                                 }
                                 style={{ cursor: "pointer" }}
                             >
+                                <p>{property.city}#${property.title.replace(/\s+/g, "-").toLowerCase()}</p>
 
                                 <div className="homeServiceImage">
                                 <img src={property.image} alt={property.title} />

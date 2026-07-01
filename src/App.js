@@ -26,10 +26,20 @@ import LegalDocumentationSupport from './pages/LegalDocumentationSupport';
 
 import Contact from "./pages/Contact";
 
-function App() {
+import LandingGodrej from "./pages/LandingGodrej";
+import LandingTvhSerenity from "./pages/LandingTvhSerenity";
+import LandingTvhCrest from "./pages/LandingTvhCrest";
+
+function AppContent() {
+
+  const location = useLocation();
+
+  const hideFooter = location.pathname === "/landing-godrej" ||
+                    location.pathname === "/landing-tvhserenity" ||
+                    location.pathname === "/landing-tvhcrest" ;
+  
   return (
     <>
-      <Router>
         <ScrollToTop/>
         <Header/>
         <Routes>
@@ -44,14 +54,26 @@ function App() {
             <Route path="/Services/LegalDocumentationSupport" element={<LegalDocumentationSupport/>} />
 
             <Route path="/Contact" element={<Contact/>} />
+
+            <Route path="/landing-godrej" element={<LandingGodrej/>} />
+            <Route path="/landing-tvhserenity" element={<LandingTvhSerenity/>} />
+            <Route path="/landing-tvhcrest" element={<LandingTvhCrest/>} />
         </Routes>
 
-        <Footer/>
+          {!hideFooter && <Footer />}
+
         <WhasappFloat/>
         <BackToTop/>
-      </Router>
       
     </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
+    </Router>
   );
 }
 
